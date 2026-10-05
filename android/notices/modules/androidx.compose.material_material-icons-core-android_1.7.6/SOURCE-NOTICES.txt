@@ -1,0 +1,316 @@
+Source files:
+commonMain/androidx/compose/material/icons/Icons.kt
+
+/*
+ * Copyright 2020 The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+Source files:
+commonMain/androidx/compose/material/icons/automirrored/filled/ArrowBack.kt
+commonMain/androidx/compose/material/icons/automirrored/filled/ArrowForward.kt
+commonMain/androidx/compose/material/icons/automirrored/filled/ExitToApp.kt
+commonMain/androidx/compose/material/icons/automirrored/filled/KeyboardArrowLeft.kt
+commonMain/androidx/compose/material/icons/automirrored/filled/KeyboardArrowRight.kt
+commonMain/androidx/compose/material/icons/automirrored/filled/List.kt
+commonMain/androidx/compose/material/icons/automirrored/filled/Send.kt
+commonMain/androidx/compose/material/icons/automirrored/outlined/ArrowBack.kt
+commonMain/androidx/compose/material/icons/automirrored/outlined/ArrowForward.kt
+commonMain/androidx/compose/material/icons/automirrored/outlined/ExitToApp.kt
+commonMain/androidx/compose/material/icons/automirrored/outlined/KeyboardArrowLeft.kt
+commonMain/androidx/compose/material/icons/automirrored/outlined/KeyboardArrowRight.kt
+commonMain/androidx/compose/material/icons/automirrored/outlined/List.kt
+commonMain/androidx/compose/material/icons/automirrored/outlined/Send.kt
+commonMain/androidx/compose/material/icons/automirrored/rounded/ArrowBack.kt
+commonMain/androidx/compose/material/icons/automirrored/rounded/ArrowForward.kt
+commonMain/androidx/compose/material/icons/automirrored/rounded/ExitToApp.kt
+commonMain/androidx/compose/material/icons/automirrored/rounded/KeyboardArrowLeft.kt
+commonMain/androidx/compose/material/icons/automirrored/rounded/KeyboardArrowRight.kt
+commonMain/androidx/compose/material/icons/automirrored/rounded/List.kt
+commonMain/androidx/compose/material/icons/automirrored/rounded/Send.kt
+commonMain/androidx/compose/material/icons/automirrored/sharp/ArrowBack.kt
+commonMain/androidx/compose/material/icons/automirrored/sharp/ArrowForward.kt
+commonMain/androidx/compose/material/icons/automirrored/sharp/ExitToApp.kt
+commonMain/androidx/compose/material/icons/automirrored/sharp/KeyboardArrowLeft.kt
+commonMain/androidx/compose/material/icons/automirrored/sharp/KeyboardArrowRight.kt
+commonMain/androidx/compose/material/icons/automirrored/sharp/List.kt
+commonMain/androidx/compose/material/icons/automirrored/sharp/Send.kt
+commonMain/androidx/compose/material/icons/automirrored/twotone/ArrowBack.kt
+commonMain/androidx/compose/material/icons/automirrored/twotone/ArrowForward.kt
+commonMain/androidx/compose/material/icons/automirrored/twotone/ExitToApp.kt
+commonMain/androidx/compose/material/icons/automirrored/twotone/KeyboardArrowLeft.kt
+commonMain/androidx/compose/material/icons/automirrored/twotone/KeyboardArrowRight.kt
+commonMain/androidx/compose/material/icons/automirrored/twotone/List.kt
+commonMain/androidx/compose/material/icons/automirrored/twotone/Send.kt
+commonMain/androidx/compose/material/icons/filled/AccountBox.kt
+commonMain/androidx/compose/material/icons/filled/AccountCircle.kt
+commonMain/androidx/compose/material/icons/filled/Add.kt
+commonMain/androidx/compose/material/icons/filled/AddCircle.kt
+commonMain/androidx/compose/material/icons/filled/ArrowBack.kt
+commonMain/androidx/compose/material/icons/filled/ArrowDropDown.kt
+commonMain/androidx/compose/material/icons/filled/ArrowForward.kt
+commonMain/androidx/compose/material/icons/filled/Build.kt
+commonMain/androidx/compose/material/icons/filled/Call.kt
+commonMain/androidx/compose/material/icons/filled/Check.kt
+commonMain/androidx/compose/material/icons/filled/CheckCircle.kt
+commonMain/androidx/compose/material/icons/filled/Clear.kt
+commonMain/androidx/compose/material/icons/filled/Close.kt
+commonMain/androidx/compose/material/icons/filled/Create.kt
+commonMain/androidx/compose/material/icons/filled/DateRange.kt
+commonMain/androidx/compose/material/icons/filled/Delete.kt
+commonMain/androidx/compose/material/icons/filled/Done.kt
+commonMain/androidx/compose/material/icons/filled/Edit.kt
+commonMain/androidx/compose/material/icons/filled/Email.kt
+commonMain/androidx/compose/material/icons/filled/ExitToApp.kt
+commonMain/androidx/compose/material/icons/filled/Face.kt
+commonMain/androidx/compose/material/icons/filled/Favorite.kt
+commonMain/androidx/compose/material/icons/filled/FavoriteBorder.kt
+commonMain/androidx/compose/material/icons/filled/Home.kt
+commonMain/androidx/compose/material/icons/filled/Info.kt
+commonMain/androidx/compose/material/icons/filled/KeyboardArrowDown.kt
+commonMain/androidx/compose/material/icons/filled/KeyboardArrowLeft.kt
+commonMain/androidx/compose/material/icons/filled/KeyboardArrowRight.kt
+commonMain/androidx/compose/material/icons/filled/KeyboardArrowUp.kt
+commonMain/androidx/compose/material/icons/filled/List.kt
+commonMain/androidx/compose/material/icons/filled/LocationOn.kt
+commonMain/androidx/compose/material/icons/filled/Lock.kt
+commonMain/androidx/compose/material/icons/filled/MailOutline.kt
+commonMain/androidx/compose/material/icons/filled/Menu.kt
+commonMain/androidx/compose/material/icons/filled/MoreVert.kt
+commonMain/androidx/compose/material/icons/filled/Notifications.kt
+commonMain/androidx/compose/material/icons/filled/Person.kt
+commonMain/androidx/compose/material/icons/filled/Phone.kt
+commonMain/androidx/compose/material/icons/filled/Place.kt
+commonMain/androidx/compose/material/icons/filled/PlayArrow.kt
+commonMain/androidx/compose/material/icons/filled/Refresh.kt
+commonMain/androidx/compose/material/icons/filled/Search.kt
+commonMain/androidx/compose/material/icons/filled/Send.kt
+commonMain/androidx/compose/material/icons/filled/Settings.kt
+commonMain/androidx/compose/material/icons/filled/Share.kt
+commonMain/androidx/compose/material/icons/filled/ShoppingCart.kt
+commonMain/androidx/compose/material/icons/filled/Star.kt
+commonMain/androidx/compose/material/icons/filled/ThumbUp.kt
+commonMain/androidx/compose/material/icons/filled/Warning.kt
+commonMain/androidx/compose/material/icons/outlined/AccountBox.kt
+commonMain/androidx/compose/material/icons/outlined/AccountCircle.kt
+commonMain/androidx/compose/material/icons/outlined/Add.kt
+commonMain/androidx/compose/material/icons/outlined/AddCircle.kt
+commonMain/androidx/compose/material/icons/outlined/ArrowBack.kt
+commonMain/androidx/compose/material/icons/outlined/ArrowDropDown.kt
+commonMain/androidx/compose/material/icons/outlined/ArrowForward.kt
+commonMain/androidx/compose/material/icons/outlined/Build.kt
+commonMain/androidx/compose/material/icons/outlined/Call.kt
+commonMain/androidx/compose/material/icons/outlined/Check.kt
+commonMain/androidx/compose/material/icons/outlined/CheckCircle.kt
+commonMain/androidx/compose/material/icons/outlined/Clear.kt
+commonMain/androidx/compose/material/icons/outlined/Close.kt
+commonMain/androidx/compose/material/icons/outlined/Create.kt
+commonMain/androidx/compose/material/icons/outlined/DateRange.kt
+commonMain/androidx/compose/material/icons/outlined/Delete.kt
+commonMain/androidx/compose/material/icons/outlined/Done.kt
+commonMain/androidx/compose/material/icons/outlined/Edit.kt
+commonMain/androidx/compose/material/icons/outlined/Email.kt
+commonMain/androidx/compose/material/icons/outlined/ExitToApp.kt
+commonMain/androidx/compose/material/icons/outlined/Face.kt
+commonMain/androidx/compose/material/icons/outlined/Favorite.kt
+commonMain/androidx/compose/material/icons/outlined/FavoriteBorder.kt
+commonMain/androidx/compose/material/icons/outlined/Home.kt
+commonMain/androidx/compose/material/icons/outlined/Info.kt
+commonMain/androidx/compose/material/icons/outlined/KeyboardArrowDown.kt
+commonMain/androidx/compose/material/icons/outlined/KeyboardArrowLeft.kt
+commonMain/androidx/compose/material/icons/outlined/KeyboardArrowRight.kt
+commonMain/androidx/compose/material/icons/outlined/KeyboardArrowUp.kt
+commonMain/androidx/compose/material/icons/outlined/List.kt
+commonMain/androidx/compose/material/icons/outlined/LocationOn.kt
+commonMain/androidx/compose/material/icons/outlined/Lock.kt
+commonMain/androidx/compose/material/icons/outlined/MailOutline.kt
+commonMain/androidx/compose/material/icons/outlined/Menu.kt
+commonMain/androidx/compose/material/icons/outlined/MoreVert.kt
+commonMain/androidx/compose/material/icons/outlined/Notifications.kt
+commonMain/androidx/compose/material/icons/outlined/Person.kt
+commonMain/androidx/compose/material/icons/outlined/Phone.kt
+commonMain/androidx/compose/material/icons/outlined/Place.kt
+commonMain/androidx/compose/material/icons/outlined/PlayArrow.kt
+commonMain/androidx/compose/material/icons/outlined/Refresh.kt
+commonMain/androidx/compose/material/icons/outlined/Search.kt
+commonMain/androidx/compose/material/icons/outlined/Send.kt
+commonMain/androidx/compose/material/icons/outlined/Settings.kt
+commonMain/androidx/compose/material/icons/outlined/Share.kt
+commonMain/androidx/compose/material/icons/outlined/ShoppingCart.kt
+commonMain/androidx/compose/material/icons/outlined/Star.kt
+commonMain/androidx/compose/material/icons/outlined/ThumbUp.kt
+commonMain/androidx/compose/material/icons/outlined/Warning.kt
+commonMain/androidx/compose/material/icons/rounded/AccountBox.kt
+commonMain/androidx/compose/material/icons/rounded/AccountCircle.kt
+commonMain/androidx/compose/material/icons/rounded/Add.kt
+commonMain/androidx/compose/material/icons/rounded/AddCircle.kt
+commonMain/androidx/compose/material/icons/rounded/ArrowBack.kt
+commonMain/androidx/compose/material/icons/rounded/ArrowDropDown.kt
+commonMain/androidx/compose/material/icons/rounded/ArrowForward.kt
+commonMain/androidx/compose/material/icons/rounded/Build.kt
+commonMain/androidx/compose/material/icons/rounded/Call.kt
+commonMain/androidx/compose/material/icons/rounded/Check.kt
+commonMain/androidx/compose/material/icons/rounded/CheckCircle.kt
+commonMain/androidx/compose/material/icons/rounded/Clear.kt
+commonMain/androidx/compose/material/icons/rounded/Close.kt
+commonMain/androidx/compose/material/icons/rounded/Create.kt
+commonMain/androidx/compose/material/icons/rounded/DateRange.kt
+commonMain/androidx/compose/material/icons/rounded/Delete.kt
+commonMain/androidx/compose/material/icons/rounded/Done.kt
+commonMain/androidx/compose/material/icons/rounded/Edit.kt
+commonMain/androidx/compose/material/icons/rounded/Email.kt
+commonMain/androidx/compose/material/icons/rounded/ExitToApp.kt
+commonMain/androidx/compose/material/icons/rounded/Face.kt
+commonMain/androidx/compose/material/icons/rounded/Favorite.kt
+commonMain/androidx/compose/material/icons/rounded/FavoriteBorder.kt
+commonMain/androidx/compose/material/icons/rounded/Home.kt
+commonMain/androidx/compose/material/icons/rounded/Info.kt
+commonMain/androidx/compose/material/icons/rounded/KeyboardArrowDown.kt
+commonMain/androidx/compose/material/icons/rounded/KeyboardArrowLeft.kt
+commonMain/androidx/compose/material/icons/rounded/KeyboardArrowRight.kt
+commonMain/androidx/compose/material/icons/rounded/KeyboardArrowUp.kt
+commonMain/androidx/compose/material/icons/rounded/List.kt
+commonMain/androidx/compose/material/icons/rounded/LocationOn.kt
+commonMain/androidx/compose/material/icons/rounded/Lock.kt
+commonMain/androidx/compose/material/icons/rounded/MailOutline.kt
+commonMain/androidx/compose/material/icons/rounded/Menu.kt
+commonMain/androidx/compose/material/icons/rounded/MoreVert.kt
+commonMain/androidx/compose/material/icons/rounded/Notifications.kt
+commonMain/androidx/compose/material/icons/rounded/Person.kt
+commonMain/androidx/compose/material/icons/rounded/Phone.kt
+commonMain/androidx/compose/material/icons/rounded/Place.kt
+commonMain/androidx/compose/material/icons/rounded/PlayArrow.kt
+commonMain/androidx/compose/material/icons/rounded/Refresh.kt
+commonMain/androidx/compose/material/icons/rounded/Search.kt
+commonMain/androidx/compose/material/icons/rounded/Send.kt
+commonMain/androidx/compose/material/icons/rounded/Settings.kt
+commonMain/androidx/compose/material/icons/rounded/Share.kt
+commonMain/androidx/compose/material/icons/rounded/ShoppingCart.kt
+commonMain/androidx/compose/material/icons/rounded/Star.kt
+commonMain/androidx/compose/material/icons/rounded/ThumbUp.kt
+commonMain/androidx/compose/material/icons/rounded/Warning.kt
+commonMain/androidx/compose/material/icons/sharp/AccountBox.kt
+commonMain/androidx/compose/material/icons/sharp/AccountCircle.kt
+commonMain/androidx/compose/material/icons/sharp/Add.kt
+commonMain/androidx/compose/material/icons/sharp/AddCircle.kt
+commonMain/androidx/compose/material/icons/sharp/ArrowBack.kt
+commonMain/androidx/compose/material/icons/sharp/ArrowDropDown.kt
+commonMain/androidx/compose/material/icons/sharp/ArrowForward.kt
+commonMain/androidx/compose/material/icons/sharp/Build.kt
+commonMain/androidx/compose/material/icons/sharp/Call.kt
+commonMain/androidx/compose/material/icons/sharp/Check.kt
+commonMain/androidx/compose/material/icons/sharp/CheckCircle.kt
+commonMain/androidx/compose/material/icons/sharp/Clear.kt
+commonMain/androidx/compose/material/icons/sharp/Close.kt
+commonMain/androidx/compose/material/icons/sharp/Create.kt
+commonMain/androidx/compose/material/icons/sharp/DateRange.kt
+commonMain/androidx/compose/material/icons/sharp/Delete.kt
+commonMain/androidx/compose/material/icons/sharp/Done.kt
+commonMain/androidx/compose/material/icons/sharp/Edit.kt
+commonMain/androidx/compose/material/icons/sharp/Email.kt
+commonMain/androidx/compose/material/icons/sharp/ExitToApp.kt
+commonMain/androidx/compose/material/icons/sharp/Face.kt
+commonMain/androidx/compose/material/icons/sharp/Favorite.kt
+commonMain/androidx/compose/material/icons/sharp/FavoriteBorder.kt
+commonMain/androidx/compose/material/icons/sharp/Home.kt
+commonMain/androidx/compose/material/icons/sharp/Info.kt
+commonMain/androidx/compose/material/icons/sharp/KeyboardArrowDown.kt
+commonMain/androidx/compose/material/icons/sharp/KeyboardArrowLeft.kt
+commonMain/androidx/compose/material/icons/sharp/KeyboardArrowRight.kt
+commonMain/androidx/compose/material/icons/sharp/KeyboardArrowUp.kt
+commonMain/androidx/compose/material/icons/sharp/List.kt
+commonMain/androidx/compose/material/icons/sharp/LocationOn.kt
+commonMain/androidx/compose/material/icons/sharp/Lock.kt
+commonMain/androidx/compose/material/icons/sharp/MailOutline.kt
+commonMain/androidx/compose/material/icons/sharp/Menu.kt
+commonMain/androidx/compose/material/icons/sharp/MoreVert.kt
+commonMain/androidx/compose/material/icons/sharp/Notifications.kt
+commonMain/androidx/compose/material/icons/sharp/Person.kt
+commonMain/androidx/compose/material/icons/sharp/Phone.kt
+commonMain/androidx/compose/material/icons/sharp/Place.kt
+commonMain/androidx/compose/material/icons/sharp/PlayArrow.kt
+commonMain/androidx/compose/material/icons/sharp/Refresh.kt
+commonMain/androidx/compose/material/icons/sharp/Search.kt
+commonMain/androidx/compose/material/icons/sharp/Send.kt
+commonMain/androidx/compose/material/icons/sharp/Settings.kt
+commonMain/androidx/compose/material/icons/sharp/Share.kt
+commonMain/androidx/compose/material/icons/sharp/ShoppingCart.kt
+commonMain/androidx/compose/material/icons/sharp/Star.kt
+commonMain/androidx/compose/material/icons/sharp/ThumbUp.kt
+commonMain/androidx/compose/material/icons/sharp/Warning.kt
+commonMain/androidx/compose/material/icons/twotone/AccountBox.kt
+commonMain/androidx/compose/material/icons/twotone/AccountCircle.kt
+commonMain/androidx/compose/material/icons/twotone/Add.kt
+commonMain/androidx/compose/material/icons/twotone/AddCircle.kt
+commonMain/androidx/compose/material/icons/twotone/ArrowBack.kt
+commonMain/androidx/compose/material/icons/twotone/ArrowDropDown.kt
+commonMain/androidx/compose/material/icons/twotone/ArrowForward.kt
+commonMain/androidx/compose/material/icons/twotone/Build.kt
+commonMain/androidx/compose/material/icons/twotone/Call.kt
+commonMain/androidx/compose/material/icons/twotone/Check.kt
+commonMain/androidx/compose/material/icons/twotone/CheckCircle.kt
+commonMain/androidx/compose/material/icons/twotone/Clear.kt
+commonMain/androidx/compose/material/icons/twotone/Close.kt
+commonMain/androidx/compose/material/icons/twotone/Create.kt
+commonMain/androidx/compose/material/icons/twotone/DateRange.kt
+commonMain/androidx/compose/material/icons/twotone/Delete.kt
+commonMain/androidx/compose/material/icons/twotone/Done.kt
+commonMain/androidx/compose/material/icons/twotone/Edit.kt
+commonMain/androidx/compose/material/icons/twotone/Email.kt
+commonMain/androidx/compose/material/icons/twotone/ExitToApp.kt
+commonMain/androidx/compose/material/icons/twotone/Face.kt
+commonMain/androidx/compose/material/icons/twotone/Favorite.kt
+commonMain/androidx/compose/material/icons/twotone/FavoriteBorder.kt
+commonMain/androidx/compose/material/icons/twotone/Home.kt
+commonMain/androidx/compose/material/icons/twotone/Info.kt
+commonMain/androidx/compose/material/icons/twotone/KeyboardArrowDown.kt
+commonMain/androidx/compose/material/icons/twotone/KeyboardArrowLeft.kt
+commonMain/androidx/compose/material/icons/twotone/KeyboardArrowRight.kt
+commonMain/androidx/compose/material/icons/twotone/KeyboardArrowUp.kt
+commonMain/androidx/compose/material/icons/twotone/List.kt
+commonMain/androidx/compose/material/icons/twotone/LocationOn.kt
+commonMain/androidx/compose/material/icons/twotone/Lock.kt
+commonMain/androidx/compose/material/icons/twotone/MailOutline.kt
+commonMain/androidx/compose/material/icons/twotone/Menu.kt
+commonMain/androidx/compose/material/icons/twotone/MoreVert.kt
+commonMain/androidx/compose/material/icons/twotone/Notifications.kt
+commonMain/androidx/compose/material/icons/twotone/Person.kt
+commonMain/androidx/compose/material/icons/twotone/Phone.kt
+commonMain/androidx/compose/material/icons/twotone/Place.kt
+commonMain/androidx/compose/material/icons/twotone/PlayArrow.kt
+commonMain/androidx/compose/material/icons/twotone/Refresh.kt
+commonMain/androidx/compose/material/icons/twotone/Search.kt
+commonMain/androidx/compose/material/icons/twotone/Send.kt
+commonMain/androidx/compose/material/icons/twotone/Settings.kt
+commonMain/androidx/compose/material/icons/twotone/Share.kt
+commonMain/androidx/compose/material/icons/twotone/ShoppingCart.kt
+commonMain/androidx/compose/material/icons/twotone/Star.kt
+commonMain/androidx/compose/material/icons/twotone/ThumbUp.kt
+commonMain/androidx/compose/material/icons/twotone/Warning.kt
+
+/*
+ * Copyright 2024 The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */

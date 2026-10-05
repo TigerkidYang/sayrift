@@ -1,0 +1,47 @@
+import groovy.json.JsonOutput
+import org.gradle.api.artifacts.component.ModuleComponentIdentifier
+
+// Resolve through Gradle, not by guessing versions from dependency declarations or the cache.
+def runtimeReport = layout.buildDirectory.file('reports/notices/release-runtime-local.json')
+def exportRuntime = tasks.register('exportReleaseRuntimeArtifacts') {
+    group = 'verification'
+    description = 'Export actual external release runtime artifacts for notice collection (local paths; do not ship).'
+    outputs.file(runtimeReport)
+    outputs.upToDateWhen { false }
+    doLast {
+        def artifacts = configurations.releaseRuntimeClasspath.resolvedConfiguration.resolvedArtifacts
+            .findAll { it.id.componentIdentifier instanceof ModuleComponentIdentifier }
+            .collect { [coordinate: it.moduleVersion.id.toString(), file: it.file.absolutePath] }
+            .unique { [it.coordinate, it.file] }
+            .sort { a, b -> (a.coordinate <=> b.coordinate) ?: (a.file <=> b.file) }
+        def report = runtimeReport.get().asFile
+        report.parentFile.mkdirs()
+        report.setText(JsonOutput.prettyPrint(JsonOutput.toJson(artifacts)) + '\n', 'UTF-8')
+    }
+}
+
+def generatedAssets = layout.buildDirectory.dir('generated/runtimeNotices/assets')
+def generateNotices = tasks.register('generateReleaseRuntimeNotices', Exec) {
+    group = 'verification'
+    description = 'Verify reviewed runtime dependency hashes and generate third_party assets and a release ZIP.'
+    dependsOn(exportRuntime)
+    inputs.file(runtimeReport)
+    inputs.dir(rootProject.file('notices'))
+    inputs.file(rootProject.file('tools/runtime_notices.py'))
+    outputs.dir(generatedAssets)
+    outputs.file(layout.buildDirectory.file('outputs/notices/sayrift-android-runtime-notices.zip'))
+    // Also rehash artifact contents even if their cache paths have not changed.
+    outputs.upToDateWhen { false }
+    commandLine providers.gradleProperty('noticePython').getOrElse('python'),
+        rootProject.file('tools/runtime_notices.py').absolutePath, 'generate',
+        '--inventory', runtimeReport.get().asFile.absolutePath,
+        '--output', generatedAssets.get().asFile.absolutePath,
+        '--zip', layout.buildDirectory.file('outputs/notices/sayrift-android-runtime-notices.zip').get().asFile.absolutePath
+}
+
+// The same reviewed release inventory is available in debug APKs for packaging inspection.
+android.sourceSets.release.assets.srcDir(generatedAssets)
+android.sourceSets.debug.assets.srcDir(generatedAssets)
+tasks.matching { it.name in ['mergeReleaseAssets', 'mergeDebugAssets'] }.configureEach {
+    dependsOn(generateNotices)
+}

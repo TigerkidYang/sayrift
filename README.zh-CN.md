@@ -6,7 +6,13 @@
 
 ![Sayrift Windows 首页，使用演示数据](docs/images/windows-home.png)
 
-**0.2.0 源码预览版** · 原名 local-typeless。使用自己的 OpenRouter key，从源码构建。本轮不提供官方二进制下载，见[发布说明](docs/release-notes.md)。
+**0.2.1** · 原名 local-typeless。可直接下载安装，也可以用自己的 OpenRouter key 从源码构建。
+
+- [Windows 11 安装包](https://github.com/TigerkidYang/sayrift/releases/download/v0.2.1/sayrift-Setup-0.2.1.exe)
+- [Android APK](https://github.com/TigerkidYang/sayrift/releases/download/v0.2.1/sayrift-0.2.1-android.apk)
+- [发布说明、校验值与依赖源码](https://github.com/TigerkidYang/sayrift/releases/tag/v0.2.1)
+
+Windows 安装包目前没有代码签名。Android APK 使用 Sayrift 发布证书，不能直接覆盖旧的个人 debug 签名版本；不要为解决签名不匹配而卸载旧应用，详见[升级兼容说明](docs/compatibility.md)。
 
 | 平台 | 当前状态 |
 | --- | --- |
@@ -29,7 +35,9 @@
 
 ## Windows 开始使用
 
-准备 Python 3.12 和 uv，在源码根目录运行：
+下载并运行安装包，按首次引导设置即可，安装版不需要 Python 或命令行。
+
+从源码运行时，准备 Python 3.12 和 uv，在源码根目录运行：
 
 ```powershell
 uv sync --locked
@@ -42,7 +50,7 @@ uv run sayrift
 uv run python tools/build_installer.py
 ```
 
-产物为 `dist\sayrift-Setup-0.2.0.exe`，按当前用户安装，不需要管理员权限。
+产物为 `dist\sayrift-Setup-0.2.1.exe`，按当前用户安装，不需要管理员权限。
 
 1. 在 Windows **用户环境变量**中添加 `OPENROUTER_API_KEY`，值为自己的 OpenRouter key，不要写进配置文件。
 2. 打开 Sayrift，按首次引导检查 key、麦克风和快捷键。添加环境变量后，可以在引导中重新检测。
@@ -61,9 +69,9 @@ uv run python tools/build_installer.py
 
 ## Android 开始使用
 
-按 [Android 构建说明](android/README.md)构建 debug APK。release 构建必须显式提供签名凭据，见[签名说明](android/signing.md)。
+直接下载上方 APK。开发者也可按 [Android 构建说明](android/README.md)和[签名说明](android/signing.md)自行构建。
 
-1. 安装本地构建的 APK，打开 Sayrift。目前 Android 界面以中文为主。
+1. 安装 APK，打开 Sayrift。目前 Android 界面以中文为主。
 2. 在引导中填写自己的 OpenRouter key，它会通过 Android Keystore 加密保存。
 3. 按引导设置麦克风、通知、后台运行和无障碍权限。无障碍服务用于显示边缘把手和插入文字，打字继续使用原来的输入法。小米 / HyperOS 按引导开启自启动，并将省电策略设为无限制。
 4. 点进支持的输入框，点击边缘把手录音，点 **✓** 结束或 **×** 取消；长按把手选择听写、翻译或 Ask。

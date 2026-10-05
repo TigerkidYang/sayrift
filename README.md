@@ -6,7 +6,13 @@ English · [简体中文](README.zh-CN.md)
 
 ![Sayrift Windows home screen with demo data](docs/images/windows-home.png)
 
-**0.2.0 source preview** · Formerly local-typeless. Build from source with your own OpenRouter key. Official binary downloads are not part of this preview; see the [release notes](docs/release-notes.md).
+**0.2.1** · Formerly local-typeless. Download an installer below, or build from source with your own OpenRouter key.
+
+- [Windows 11 installer](https://github.com/TigerkidYang/sayrift/releases/download/v0.2.1/sayrift-Setup-0.2.1.exe)
+- [Android APK](https://github.com/TigerkidYang/sayrift/releases/download/v0.2.1/sayrift-0.2.1-android.apk)
+- [Release notes, checksums and dependency sources](https://github.com/TigerkidYang/sayrift/releases/tag/v0.2.1)
+
+Windows builds are currently unsigned. The Android APK is signed with the Sayrift release certificate; it cannot directly replace earlier personal debug-signed installations. Do not uninstall an existing installation just to bypass a signature mismatch; see [upgrade compatibility](docs/compatibility.md).
 
 | Platform | Current status |
 | --- | --- |
@@ -29,7 +35,9 @@ A layered hotword library is being explored separately and is **not included** i
 
 ## Windows quick start
 
-From a source checkout, with Python 3.12 and uv installed:
+Download and run the installer, then follow the first-run guide. No Python or terminal is needed for the installed app.
+
+For a source checkout, use Python 3.12 and uv:
 
 ```powershell
 uv sync --locked
@@ -42,7 +50,7 @@ uv run sayrift
 uv run python tools/build_installer.py
 ```
 
-This produces `dist\sayrift-Setup-0.2.0.exe`. Installation is per user and does not require administrator rights.
+This produces `dist\sayrift-Setup-0.2.1.exe`. Installation is per user and does not require administrator rights.
 
 1. Add your OpenRouter key as the **user environment variable** `OPENROUTER_API_KEY`. Do not put it in a configuration file.
 2. Open Sayrift and follow the first-run guide to check the key, microphone, and shortcuts. The guide can re-read the user environment after you add the key.
@@ -61,9 +69,9 @@ For proxy configuration, use Settings → Advanced. Otherwise, the app checks pr
 
 ## Android quick start
 
-Build a debug APK with the [Android build instructions](android/README.md). Release builds require explicit signing credentials; see [Android signing](android/signing.md).
+Download the release APK above. Developers can also follow the [Android build instructions](android/README.md) and [signing guide](android/signing.md).
 
-1. Install your locally built APK and open Sayrift. The current Android interface is primarily Chinese.
+1. Install the APK and open Sayrift. The current Android interface is primarily Chinese.
 2. Enter your own OpenRouter key in the guide. It is encrypted using Android Keystore.
 3. Follow the microphone, notification, background-running, and accessibility setup. Accessibility enables the edge handle and text insertion while you keep your usual keyboard. On Xiaomi / HyperOS, allow autostart and unrestricted battery use as directed by the guide.
 4. Focus a supported text field and tap the edge handle to record. Tap **✓** to finish or **×** to cancel. Long-press the handle to choose Dictate, Translate, or Ask.

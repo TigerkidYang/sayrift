@@ -1,8 +1,8 @@
-# Sayrift 0.2.0 preview: compatibility and upgrades
+# Sayrift 0.2.1 preview: compatibility and upgrades
 
 [English overview](../README.md) · [中文概览](../README.zh-CN.md) · [Build and test instructions](../CONTRIBUTING.md)
 
-Sayrift is the new public name for local-typeless. The 0.2.0 preview covers Windows and Android. The first publication is an MIT-licensed source preview. It includes no official EXE/APK downloads; binary distribution requires additional dependency and signing verification.
+Sayrift is the new public name for local-typeless. The 0.2.1 release covers Windows and Android. The first publication is an MIT-licensed source preview. It includes no official EXE/APK downloads; binary distribution requires additional dependency and signing verification.
 
 ## Platform coverage
 
@@ -28,11 +28,11 @@ On Android, grant microphone permission and follow the notification and accessib
 
 The display name and public launch commands change to Sayrift. Existing data and internal identifiers are deliberately retained so a branding change does not create a fresh profile.
 
-| Item | 0.2.0 behavior |
+| Item | 0.2.1 behavior |
 | --- | --- |
 | Public desktop commands | `uv run sayrift` and `uv run sayrift-gui`; the latter is the windowless launcher. |
 | Legacy source launch aliases | `uv run local-typeless` and `uv run local-typeless-gui` remain compatibility aliases. These are command entry points, not a promise that every old executable path remains present. |
-| Windows installer filename | `sayrift-Setup-0.2.0.exe`. |
+| Windows installer filename | `sayrift-Setup-0.2.1.exe`. |
 | Python import/source package | Still `local_typeless`, under `src/local_typeless/`. Do not rewrite imports to `sayrift`. |
 | Default Windows data directory | Still `%APPDATA%\local-typeless`, including `config.toml` and `history.sqlite`. No manual folder rename is required. |
 | Configuration environment variables | `SAYRIFT_CONFIG` takes precedence over the legacy `LOCAL_TYPELESS_CONFIG`. If neither is set, use `%APPDATA%\local-typeless\config.toml`. |
@@ -56,7 +56,7 @@ An in-place Android update needs the same application ID, a compatible version c
 
 Older personal builds used a debug certificate, including their release variants. New release builds require explicit signing credentials and do not silently use the debug certificate. Debug keystores can differ between machines, so rebuilding elsewhere may produce an APK that cannot update an existing installation. See [signing](../android/signing.md).
 
-Keep the original personal signing certificate/key when continuing that installation. Do not uninstall just to work around a signature mismatch if you need the current history, settings, and encrypted key: uninstalling removes app data and its Keystore material. The first source preview does not publish a production-signed APK.
+Keep the original personal signing certificate/key when continuing that installation. Do not uninstall just to work around a signature mismatch if you need the current history, settings, and encrypted key: uninstalling removes app data and its Keystore material. The 0.2.1 public APK uses a new Sayrift release certificate, separate from the original personal debug certificate. Subsequent public releases use the same release identity. A signature mismatch is expected when installing it over an old debug build; keep that installation until a separate data-preserving migration is arranged.
 
 ## Data retained on each device
 

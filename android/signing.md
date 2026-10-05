@@ -116,3 +116,15 @@ Windows 对应 `apksigner.bat`。AAB 用 JDK 的 `jarsigner -verify -verbose -ce
 
 参考：[Android 官方应用签名文档](https://developer.android.com/studio/publish/app-signing)、
 [命令行构建](https://developer.android.com/build/building-cmdline)。
+
+## Sayrift 0.2.1 公开签名
+
+公开 APK 使用独立的 RSA 4096 发布证书（`CN=Sayrift, OU=Release, O=Sayrift`），与早期个人 debug 签名不同。证书 SHA-256：
+
+```text
+7199eda9e10df933d19bfb1bc40eed3ba67244641ebd046d3cc3172b786ba0ba
+```
+
+本轮发布构建通过 `apksigner verify --verbose --print-certs`，使用 APK v2 签名，适用的最低 Android 版本为 10（API 29）。后续公开 APK 应保持该签名身份。上方 2026-10-05 的记录描述的是签名配置初次实现时的验证范围，不代表此次安装版仍未构建。
+
+发布者使用仓库外受限目录保存私钥，密码经 Windows DPAPI 加密保存，构建仅通过进程环境变量注入。DPAPI 文件绑定当前 Windows 用户，不能把它当作跨机器的可恢复备份；仍应按上方步骤另外安排离线加密备份。公开仓库及发布附件不得含私钥或其口令。

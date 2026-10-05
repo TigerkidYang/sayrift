@@ -1,6 +1,6 @@
 # Contributing to Sayrift
 
-Sayrift 0.2.0 is a preview for Windows 11 and Android. Read [AGENTS.md](AGENTS.md) before changing the project, and [compatibility](docs/compatibility.md) before changing names, storage, or installation behavior. Sayrift code is licensed under [MIT](LICENSE); third-party materials retain their own terms.
+Sayrift 0.2.1 is a preview for Windows 11 and Android. Read [AGENTS.md](AGENTS.md) before changing the project, and [compatibility](docs/compatibility.md) before changing names, storage, or installation behavior. Sayrift code is licensed under [MIT](LICENSE); third-party materials retain their own terms.
 
 ## Working on a change
 
@@ -35,7 +35,7 @@ Build the Windows installer with:
 uv run python tools/build_installer.py
 ```
 
-Expected output: `dist\sayrift-Setup-0.2.0.exe`. Building an installer does not publish a release.
+Expected output: `dist\sayrift-Setup-0.2.1.exe`. Building an installer does not publish a release.
 
 ## Android development
 

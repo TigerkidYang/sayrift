@@ -1,6 +1,6 @@
 # Sayrift Android
 
-`0.2.0`（`versionCode = 2`）将原来的 local-typeless 更名为 Sayrift，沿用 Glass 光球图标。
+`0.2.1`（`versionCode = 3`）将原来的 local-typeless 更名为 Sayrift，沿用 Glass 光球图标。
 改名覆盖启动器、系统应用与无障碍服务标签、引导和故障提示、录音通知、Gradle 项目名及 OpenRouter 的 `X-Title`。
 
 ## 升级兼容性
@@ -22,7 +22,7 @@
 **签名规则：**debug 使用开发签名；release 必须显式配置签名凭据，缺失时拒绝构建。
 旧个人安装曾使用 debug 签名。更新它时必须显式使用原来的签名身份；换电脑生成同名文件不能代替原证书。
 不要为解决签名不匹配而卸载旧应用，这会删除历史、设置和设备 Keystore 材料。
-配置、备份与核验步骤见[签名说明](signing.md)。首次源码预览不附带官方 APK。
+配置、备份与核验步骤见[签名说明](signing.md)。[v0.2.1](https://github.com/TigerkidYang/sayrift/releases/tag/v0.2.1) 提供使用独立发布证书签署的 APK，不可直接覆盖原个人 debug 签名版本。
 
 ## 本地验证与构建
 

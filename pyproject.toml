@@ -36,6 +36,8 @@ module-name = "local_typeless"
 
 [dependency-groups]
 dev = [
+    "cmake==3.31.6",
+    "ninja==1.11.1.4",
     "pyinstaller>=6.22.3",
     "pytest>=9.1.1",
     "ruff>=0.16.8",

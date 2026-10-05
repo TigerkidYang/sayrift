@@ -197,7 +197,7 @@ def generate(inventory: Path, output: Path, zip_path: Path) -> None:
     actual = artifact_rows(inventory)
     if actual != manifest["artifacts"]:
         raise ValueError("Runtime dependencies differ from reviewed notices. Run refresh and review the evidence diff.")
-    files = {}
+    files = {"Sayrift-LICENSE.txt": (ANDROID.parent / "LICENSE").read_bytes()}
     for name, sha in manifest["files"].items():
         data = (EVIDENCE / name).read_bytes()
         if digest(data) != sha:

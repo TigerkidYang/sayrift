@@ -102,7 +102,7 @@ uv run ruff format --check android/tools
 未审核制品/被修改证据拒绝生成，以及 APK 文件缺失或内容变化。
 
 本次结果：7 项单元测试、仓库 Ruff lint/format 通过；JDK 21 / SDK 35 下 debug APK
-构建通过（包括离线增量构建），APK 内 152 个告知文件与配套 ZIP 逐字节相同；
+构建通过（包括离线增量构建），APK 内 153 个告知文件与配套 ZIP 逐字节相同；
 两次独立生成 ZIP 的 SHA-256 相同。公共清单检查无本机用户名或绝对路径，并记录四个原生库。
 `notices/.gitattributes` 禁止 Git 对上游材料转换换行，确保 Windows/Unix 检出的证据哈希一致。
 最终 0.2.1 签名 APK 的检查由集成发布任务在重建后执行。

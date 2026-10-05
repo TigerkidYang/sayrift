@@ -27,6 +27,7 @@ def generateNotices = tasks.register('generateReleaseRuntimeNotices', Exec) {
     dependsOn(exportRuntime)
     inputs.file(runtimeReport)
     inputs.dir(rootProject.file('notices'))
+    inputs.file(rootProject.file('../LICENSE'))
     inputs.file(rootProject.file('tools/runtime_notices.py'))
     outputs.dir(generatedAssets)
     outputs.file(layout.buildDirectory.file('outputs/notices/sayrift-android-runtime-notices.zip'))

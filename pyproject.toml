@@ -1,0 +1,59 @@
+[project]
+name = "sayrift"
+version = "0.2.0"
+description = "Sayrift: voice dictation, translation and editing for Windows, powered by OpenRouter"
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE", "THIRD_PARTY_NOTICES.md", "licenses/*.txt", "licenses/README.md"]
+authors = [
+    { name = "TigerkidYang and Sayrift contributors" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "httpx>=0.28.1",
+    "numpy>=2.5.3",
+    "pyside6-essentials>=6.11.2",
+    "sounddevice>=0.5.6",
+    "soundfile>=0.14.0",
+]
+
+[project.scripts]
+sayrift = "local_typeless.cli:main"
+# Keep the original development command working during the rename.
+local-typeless = "local_typeless.cli:main"
+
+[project.gui-scripts]
+# Windowless launcher: tray app without a console window.
+sayrift-gui = "local_typeless.cli:main"
+local-typeless-gui = "local_typeless.cli:main"
+
+[build-system]
+requires = ["uv_build>=0.9.18,<0.10.0"]
+build-backend = "uv_build"
+
+[tool.uv.build-backend]
+module-name = "local_typeless"
+
+[dependency-groups]
+dev = [
+    "pyinstaller>=6.22.3",
+    "pytest>=9.1.1",
+    "ruff>=0.16.8",
+]
+
+[tool.ruff]
+line-length = 120
+target-version = "py312"
+extend-exclude = ["evals", "docs"]  # docs/research holds archived experiment scripts, kept as run
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "UP", "B", "SIM", "RUF"]
+ignore = ["RUF001", "RUF002", "RUF003"]  # full-width CJK punctuation in prompts/strings is intentional
+
+[tool.ruff.lint.per-file-ignores]
+"tools/ui_preview.py" = ["E501"]  # sample CJK sentences read better unwrapped
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = ["network: calls the real OpenRouter API (costs money); deselected by default"]
+addopts = "-m 'not network'"

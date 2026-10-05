@@ -1,0 +1,14 @@
+{"id": "formal_rewrite", "spoken": "嗯帮我把这段改得正式一点", "selection": "明天我不来了，身体不太舒服，有事微信找我", "context": {"app": "Weixin.exe"}, "action": "replace", "must_not": ["不来了"]}
+{"id": "question_about_selection", "spoken": "这句话是什么意思", "selection": "The quick brown fox jumps over the lazy dog.", "action": "answer"}
+{"id": "translate_selection", "spoken": "翻译成英文", "selection": "我们下周三开会讨论一下预算的问题", "action": "replace", "must_any": [["Wednesday", "wednesday"]], "must_not": ["我们"]}
+{"id": "help_write_email", "spoken": "帮我写一封邮件给王经理，说项目要延期一周，原因是测试没通过", "context": {"app": "OUTLOOK.EXE"}, "action": "insert", "must": ["王经理"], "must_any": [["一周", "1周", "一个星期"]]}
+{"id": "general_question_zh", "spoken": "法国的首都是哪里", "action": "answer", "must": ["巴黎"]}
+{"id": "list_reformat", "spoken": "把这个改成列表", "selection": "第一步安装uv，第二步运行uv sync，第三步运行测试", "action": "replace", "min_lines": 3}
+{"id": "shorten", "spoken": "精简一下", "selection": "关于这个问题，我个人觉得其实我们可以先不用着急做决定，因为现在的信息还不是特别充分，我们可以等下周数据出来以后再一起讨论一下，看看到底应该怎么做比较好。", "action": "replace", "max_ratio": 0.8}
+{"id": "fix_grammar_en", "spoken": "fix the grammar", "selection": "he dont know what they was doing yesterday", "action": "replace", "must_any": [["doesn't", "does not", "didn't", "did not"]], "must_not": ["dont", "they was"]}
+{"id": "is_this_correct", "spoken": "这个对吗", "selection": "2 + 2 = 5", "action": "answer"}
+{"id": "summarize_selection", "spoken": "总结一下这段", "selection": "Typeless is an AI voice dictation app. It removes filler words, applies self-corrections, and formats lists automatically. It also offers a translation mode and an Ask anything mode for editing selected text or asking questions. The free plan was recently reduced to 2,000 words per week, while Pro costs $12 per month billed yearly.", "action": "answer"}
+{"id": "reply_draft_chat", "spoken": "帮我回复他说今天晚上可以，七点在公司楼下见", "context": {"app": "Weixin.exe"}, "action": "insert", "must_any": [["7点", "七点", "19:00", "19点"]]}
+{"id": "write_code", "spoken": "写一个Python函数判断一个数是不是质数", "context": {"app": "Code.exe", "window_title": "utils.py - demo - Visual Studio Code"}, "action": "insert", "must": ["def "]}
+{"id": "english_question", "spoken": "what's the difference between TCP and UDP", "action": "answer", "must": ["TCP", "UDP"]}
+{"id": "continue_writing", "spoken": "帮我接着写两句", "selection": "我们这次活动的目标是", "action": "replace", "must": ["我们这次活动的目标是"]}

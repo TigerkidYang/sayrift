@@ -1,0 +1,37 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# Tool caches
+.pytest_cache/
+.ruff_cache/
+
+# Local secrets / personal config (the API key lives in the user environment, never in the repo)
+.env
+.env.*
+!.env.example
+*.jks
+*.keystore
+*.p12
+*.pfx
+key.properties
+dev.json
+*.sqlite
+*.sqlite-*
+*.db
+config.toml
+
+# Benchmark outputs and scratch
+bench*.json
+*.log
+
+# Personal recordings for evals: keep them out of git unless explicitly added (see evals/README.md)
+evals/asr/audio/private/
+evals/asr/audio/*

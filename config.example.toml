@@ -1,0 +1,48 @@
+# Sayrift 配置样例。
+# 复制到 %APPDATA%\local-typeless\config.toml（或用环境变量 SAYRIFT_CONFIG 指向别处）。
+# 只需要写想改的项，其余用默认值；写错键名会直接报错。
+# API key 不写在这里：它来自用户级环境变量 OPENROUTER_API_KEY。
+
+# 个人词典：人名、产品名、术语。会作为 gpt-transcribe 的 keywords 提示，并作为 LLM 的首选拼写。
+dictionary = ["Claude Code", "OpenRouter", "pytest", "uv"]
+
+[hotkeys]
+# 默认值与 Typeless Windows 版一致。键名：RightAlt / RightCtrl / RightShift / Space / CapsLock / F13 … / 单个字母
+main = "RightAlt"          # 点按开始、再点结束；或按住说话、松开结束
+translate = "RightShift"   # 与 main 一起按：翻译
+ask = "Space"              # 与 main 一起按：Ask anything（M3 实现）
+cancel = "Escape"
+hold_threshold_s = 0.5     # 按住超过这个时长再松开 = 结束（按住说话）
+hold_to_talk = true        # false：严格照现行官方文档，只有“点一下开始、再点一下结束”
+
+[audio]
+device = ""                # 麦克风名称的一部分；空 = 系统默认麦克风
+sounds = true              # 开始 / 结束 / 出错提示音
+max_seconds = 540          # 单次最长 9 分钟（与 Typeless 一致）
+
+[translate]
+targets = ["English"]      # 目标语言有序列表；当前用第一个
+
+[asr]
+model = "openai/gpt-transcribe"
+fallback_model = "microsoft/mai-transcribe-2"
+languages = ["zh-cn", "en"]          # 期望说的语言（gpt-transcribe 的 languages 提示）
+
+[polish]
+enabled = true
+model = "deepseek/deepseek-v4.1-flash"
+fallback_model = "openai/gpt-6-luna"
+cjk_spacing = true                   # true: "用 Python 写"；false: "用Python写"
+first_token_timeout_s = 6.0          # 超过这个时间还没出字就换备用模型
+
+[history]
+keep = "forever"                     # forever / 1y / 1m / 1w / 24h / never（与 Typeless 相同）
+keep_audio = true                    # 保存原始音频以便“重试”；只存在本机
+
+[app]
+log_text = false                     # 把转写原文和结果写进日志（仅调试时打开）
+
+[openrouter]
+# proxy = "http://127.0.0.1:7890"    # 不填：先读 HTTPS_PROXY/HTTP_PROXY，再读 Windows 系统代理
+deny_data_collection = true          # 只路由到不留存、不训练的供应商
+zdr = false                          # 只用零数据留存端点（更严格；没有 ZDR 端点的模型会失败）

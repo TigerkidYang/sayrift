@@ -1,0 +1,9 @@
+# Keep LF in the repo and the working tree (Python, Markdown, TOML all handle it on Windows).
+* text=auto eol=lf
+
+# Binary assets
+*.ogg binary
+*.wav binary
+*.mp3 binary
+*.png binary
+*.ico binary

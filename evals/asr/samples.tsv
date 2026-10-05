@@ -1,0 +1,10 @@
+zh_basic	zh-CN-XiaoxiaoNeural	今天下午我想把这个项目的需求整理一下，然后发给团队看看。
+zh_en_mixed	zh-CN-YunxiNeural	我们这个 PR 需要先跑一下 CI，然后把 README 里面关于 API key 的配置说明更新一下，最后再 merge 到 main 分支。
+zh_disfluent	zh-CN-XiaoxiaoNeural	嗯，那个，我们明天下午三点，不对，是四点，在三楼会议室开会，呃，大家记得带上电脑。
+zh_list	zh-CN-YunxiNeural	这周要做三件事，第一，把录音模块写完，第二，接上 OpenRouter 的接口，第三，写一个简单的设置界面。
+zh_question	zh-CN-XiaoxiaoNeural	你觉得我们应该用 Python 还是 Rust 来写这个工具？
+zh_tech	zh-CN-YunxiNeural	帮我在 Claude Code 里面跑一下 uv sync，然后用 pytest 测一下 OpenRouter 的 client 有没有问题。
+en_basic	en-US-AriaNeural	Hey team, just a quick update. The build is green now, and I'll push the release notes by Friday.
+en_disfluent	en-US-GuyNeural	So um, I think we should, uh, we should probably move the meeting to Thursday, no wait, Wednesday afternoon.
+zh_ask_formal	zh-CN-XiaoxiaoNeural	帮我把这段话改得更正式一点。
+zh_ask_question	zh-CN-YunxiNeural	法国的首都是哪里？

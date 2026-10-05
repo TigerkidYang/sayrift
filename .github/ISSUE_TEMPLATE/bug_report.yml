@@ -1,0 +1,26 @@
+name: Bug report
+description: Report a reproducible problem using non-sensitive sample content.
+body:
+  - type: markdown
+    attributes:
+      value: "Please do not attach API keys, personal recordings, history databases or unredacted logs. See SECURITY.md for sensitive reports."
+  - type: input
+    id: version
+    attributes:
+      label: Sayrift version and installation source
+    validations:
+      required: true
+  - type: input
+    id: platform
+    attributes:
+      label: OS, device, keyboard and target application
+      description: "For example: Windows 11 + Microsoft Pinyin + Notepad, or Android 16 + Gboard + WeChat."
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to reproduce
+      description: Include expected and actual behavior, using a harmless sample sentence.
+    validations:
+      required: true

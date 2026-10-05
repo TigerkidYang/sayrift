@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Sayrift</string>
+    <string name="accessibility_label">Sayrift 语音输入</string>
+    <string name="accessibility_description">在你点进输入框时，屏幕边缘出现一个细小的语音把手。点一下开始说话，再点一下，整理好的文字会插入到光标处。它只读取当前输入框的文字和选区，用来插入结果；不读取其他内容，不上传屏幕内容。</string>
+</resources>

@@ -54,6 +54,6 @@ ignore = ["RUF001", "RUF002", "RUF003"]  # full-width CJK punctuation in prompts
 "tools/ui_preview.py" = ["E501"]  # sample CJK sentences read better unwrapped
 
 [tool.pytest.ini_options]
-testpaths = ["tests"]
+testpaths = ["tests", "android/tools"]
 markers = ["network: calls the real OpenRouter API (costs money); deselected by default"]
 addopts = "-m 'not network'"

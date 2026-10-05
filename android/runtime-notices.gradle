@@ -42,6 +42,10 @@ def generateNotices = tasks.register('generateReleaseRuntimeNotices', Exec) {
 // The same reviewed release inventory is available in debug APKs for packaging inspection.
 android.sourceSets.release.assets.srcDir(generatedAssets)
 android.sourceSets.debug.assets.srcDir(generatedAssets)
-tasks.matching { it.name in ['mergeReleaseAssets', 'mergeDebugAssets'] }.configureEach {
+// Lint report/model tasks also consume these source-set assets during release builds.
+tasks.matching {
+    it.name in ['mergeReleaseAssets', 'mergeDebugAssets'] ||
+        it.name.startsWith('lint') || it.name.contains('Lint')
+}.configureEach {
     dependsOn(generateNotices)
 }

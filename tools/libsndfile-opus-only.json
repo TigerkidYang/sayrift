@@ -1,0 +1,82 @@
+{
+  "src/flac.c": [
+    {
+      "old": "/*\n** Copyright (C) 2004-2017 Erik de Castro Lopo <erikd@mega-nerd.com>\n** Copyright (C) 2004 Tobias Gehrig <tgehrig@ira",
+      "new": "/* Sayrift modification 2026-10-06: external codecs limited to Ogg/Opus. */\n/*\n** Copyright (C) 2004-2017 Erik de Castro Lopo <erikd@mega-nerd.com>\n** Copyright (C) 2004 Tobias Gehrig <tgehrig@ira",
+      "count": 1
+    },
+    {
+      "old": "#if HAVE_EXTERNAL_XIPH_LIBS",
+      "new": "#if 0 /* Sayrift: external codec deliberately disabled. */",
+      "count": 1
+    }
+  ],
+  "src/ogg_vorbis.c": [
+    {
+      "old": "/*\n** Copyright (C) 2018-2021 Arthur Taylor <art@ified.ca>\n** Copyright (C) 2002-2016 Erik de Castro Lopo <erikd@mega-ne",
+      "new": "/* Sayrift modification 2026-10-06: external codecs limited to Ogg/Opus. */\n/*\n** Copyright (C) 2018-2021 Arthur Taylor <art@ified.ca>\n** Copyright (C) 2002-2016 Erik de Castro Lopo <erikd@mega-ne",
+      "count": 1
+    },
+    {
+      "old": "#if HAVE_EXTERNAL_XIPH_LIBS",
+      "new": "#if 0 /* Sayrift: external codec deliberately disabled. */",
+      "count": 1
+    }
+  ],
+  "CMakeLists.txt": [
+    {
+      "old": "cmake_minimum_required (VERSION 3.1..3.18)\n",
+      "new": "# Sayrift modification 2026-10-06: external codecs limited to Ogg/Opus.\ncmake_minimum_required (VERSION 3.1..3.18)\n",
+      "count": 1
+    },
+    {
+      "old": "\t\t$<$<BOOL:${HAVE_EXTERNAL_XIPH_LIBS}>:Vorbis::vorbisenc>\n",
+      "new": "",
+      "count": 1
+    },
+    {
+      "old": "\t\t$<$<BOOL:${HAVE_EXTERNAL_XIPH_LIBS}>:FLAC::FLAC>\n",
+      "new": "",
+      "count": 1
+    }
+  ],
+  "src/command.c": [
+    {
+      "old": "/*\n** Copyright (C) 2001-2016 Erik de Castro Lopo <erikd@mega-nerd.com>\n**\n** This program is free software; you can red",
+      "new": "/* Sayrift modification 2026-10-06: external codecs limited to Ogg/Opus. */\n/*\n** Copyright (C) 2001-2016 Erik de Castro Lopo <erikd@mega-nerd.com>\n**\n** This program is free software; you can red",
+      "count": 1
+    },
+    {
+      "old": "\t{\tSF_FORMAT_FLAC | SF_FORMAT_PCM_16,\n\t\t\"FLAC 16 bit\", \"flac\"\n\t\t},\n",
+      "new": "",
+      "count": 1
+    },
+    {
+      "old": "\t{\tSF_FORMAT_OGG | SF_FORMAT_VORBIS,\n\t\t\"Ogg Vorbis (Xiph Foundation)\", \"ogg\"\n\t\t},\n",
+      "new": "",
+      "count": 1
+    },
+    {
+      "old": "\t{\tSF_FORMAT_FLAC,\t\t\"FLAC (Free Lossless Audio Codec)\",\t\t\"flac\"\t},\n",
+      "new": "",
+      "count": 1
+    },
+    {
+      "old": "\t{\tSF_FORMAT_VORBIS,\t\t\"Vorbis\",\t\t\t\tNULL \t},\n",
+      "new": "",
+      "count": 1
+    }
+  ],
+  "src/sndfile.c": [
+    {
+      "old": "/*\n** Copyright (C) 1999-2018 Erik de Castro Lopo <erikd@mega-nerd.com>\n**\n** This program is free software; you can red",
+      "new": "/* Sayrift modification 2026-10-06: external codecs limited to Ogg/Opus. */\n/*\n** Copyright (C) 1999-2018 Erik de Castro Lopo <erikd@mega-nerd.com>\n**\n** This program is free software; you can red",
+      "count": 1
+    },
+    {
+      "old": "\tsubformat = SF_CODEC (info->format) ;\n\tendian = SF_ENDIAN (info->format) ;",
+      "new": "\tsubformat = SF_CODEC (info->format) ;\n\tendian = SF_ENDIAN (info->format) ;\n\n\t/* Sayrift: these optional external codecs are not linked. */\n\tif (SF_CONTAINER (info->format) == SF_FORMAT_FLAC\n\t\t|| SF_CONTAINER (info->format) == SF_FORMAT_MPEG\n\t\t|| subformat == SF_FORMAT_VORBIS)\n\t\treturn 0 ;",
+      "count": 1
+    }
+  ]
+}

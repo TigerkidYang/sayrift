@@ -1,0 +1,1891 @@
+SOURCE FILE: src/aiff.c
+/*
+** Copyright (C) 1999-2018 Erik de Castro Lopo <erikd@mega-nerd.com>
+** Copyright (C) 2005 David Viens <davidv@plogue.com>
+**
+** This program is free software; you can redistribute it and/or modify
+** it under the terms of the GNU Lesser General Public License as published by
+** the Free Software Foundation; either version 2.1 of the License, or
+** (at your option) any later version.
+**
+** This program is distributed in the hope that it will be useful,
+** but WITHOUT ANY WARRANTY; without even the implied warranty of
+** MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+** GNU Lesser General Public License for more details.
+**
+** You should have received a copy of the GNU Lesser General Public License
+** along with this program; if not, write to the Free Software
+** Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+*/
+
+SOURCE FILE: src/alac.c
+/*
+** Copyright (C) 2011-2016 Erik de Castro Lopo <erikd@mega-nerd.com>
+**
+** This program is free software; you can redistribute it and/or modify
+** it under the terms of the GNU Lesser General Public License as published by
+** the Free Software Foundation; either version 2.1 of the License, or
+** (at your option) any later version.
+**
+** This program is distributed in the hope that it will be useful,
+** but WITHOUT ANY WARRANTY; without even the implied warranty of
+** MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+** GNU Lesser General Public License for more details.
+**
+** You should have received a copy of the GNU Lesser General Public License
+** along with this program; if not, write to the Free Software
+** Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+*/
+
+SOURCE FILE: src/alaw.c
+/*
+** Copyright (C) 1999-2013 Erik de Castro Lopo <erikd@mega-nerd.com>
+**
+** This program is free software; you can redistribute it and/or modify
+** it under the terms of the GNU Lesser General Public License as published by
+** the Free Software Foundation; either version 2.1 of the License, or
+** (at your option) any later version.
+**
+** This program is distributed in the hope that it will be useful,
+** but WITHOUT ANY WARRANTY; without even the implied warranty of
+** MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+** GNU Lesser General Public License for more details.
+**
+** You should have received a copy of the GNU Lesser General Public License
+** along with this program; if not, write to the Free Software
+** Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+*/
+
+SOURCE FILE: src/au.c
+/*
+** Copyright (C) 1999-2017 Erik de Castro Lopo <erikd@mega-nerd.com>
+**
+** This program is free software; you can redistribute it and/or modify
+** it under the terms of the GNU Lesser General Public License as published by
+** the Free Software Foundation; either version 2.1 of the License, or
+** (at your option) any later version.
+**
+** This program is distributed in the hope that it will be useful,
+** but WITHOUT ANY WARRANTY; without even the implied warranty of
+** MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+** GNU Lesser General Public License for more details.
+**
+** You should have received a copy of the GNU Lesser General Public License
+** along with this program; if not, write to the Free Software
+** Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+*/
+
+SOURCE FILE: src/audio_detect.c
+/*
+** Copyright (C) 1999-2012 Erik de Castro Lopo <erikd@mega-nerd.com>
+**
+** This program is free software; you can redistribute it and/or modify
+** it under the terms of the GNU Lesser General Public License as published by
+** the Free Software Foundation; either version 2.1 of the License, or
+** (at your option) any later version.
+**
+** This program is distributed in the hope that it will be useful,
+** but WITHOUT ANY WARRANTY; without even the implied warranty of
+** MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+** GNU Lesser General Public License for more details.
+**
+** You should have received a copy of the GNU Lesser General Public License
+** along with this program; if not, write to the Free Software
+** Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+*/
+
+SOURCE FILE: src/avr.c
+/*
+** Copyright (C) 2004-2017 Erik de Castro Lopo <erikd@mega-nerd.com>
+**
+** This program is free software; you can redistribute it and/or modify
+** it under the terms of the GNU Lesser General Public License as published by
+** the Free Software Foundation; either version 2.1 of the License, or
+** (at your option) any later version.
+**
+** This program is distributed in the hope that it will be useful,
+** but WITHOUT ANY WARRANTY; without even the implied warranty of
+** MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+** GNU Lesser General Public License for more details.
+**
+** You should have received a copy of the GNU Lesser General Public License
+** along with this program; if not, write to the Free Software
+** Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+*/
+
+SOURCE FILE: src/broadcast.c
+/*
+** Copyright (C) 2006-2016 Erik de Castro Lopo <erikd@mega-nerd.com>
+** Copyright (C) 2006 Paul Davis <paul@linuxaudiosystems.com>
+**
+** This program is free software; you can redistribute it and/or modify
+** it under the terms of the GNU Lesser General Public License as published by
+** the Free Software Foundation; either version 2.1 of the License, or
+** (at your option) any later version.
+**
+** This program is distributed in the hope that it will be useful,
+** but WITHOUT ANY WARRANTY; without even the implied warranty of
+** MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+** GNU Lesser General Public License for more details.
+**
+** You should have received a copy of the GNU Lesser General Public License
+** along with this program; if not, write to the Free Software
+** Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+*/
+
+SOURCE FILE: src/caf.c
+/*
+** Copyright (C) 2005-2017 Erik de Castro Lopo <erikd@mega-nerd.com>
+**
+** This program is free software; you can redistribute it and/or modify
+** it under the terms of the GNU Lesser General Public License as published by
+** the Free Software Foundation; either version 2.1 of the License, or
+** (at your option) any later version.
+**
+** This program is distributed in the hope that it will be useful,
+** but WITHOUT ANY WARRANTY; without even the implied warranty of
+** MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+** GNU Lesser General Public License for more details.
+**
+** You should have received a copy of the GNU Lesser General Public License
+** along with this program; if not, write to the Free Software
+** Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+*/
+
+SOURCE FILE: src/cart.c
+/*
+** Copyright (C) 2012 Chris Roberts <c.roberts@csrfm.com>
+** Copyright (C) 2006-2013 Erik de Castro Lopo <erikd@mega-nerd.com>
+** Copyright (C) 2006 Paul Davis <paul@linuxaudiosystems.com>
+**
+** This program is free software; you can redistribute it and/or modify
+** it under the terms of the GNU Lesser General Public License as published by
+** the Free Software Foundation; either version 2.1 of the License, or
+** (at your option) any later version.
+**
+** This program is distributed in the hope that it will be useful,
+** but WITHOUT ANY WARRANTY; without even the implied warranty of
+** MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+** GNU Lesser General Public License for more details.
+**
+** You should have received a copy of the GNU Lesser General Public License
+** along with this program; if not, write to the Free Software
+** Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+*/
+
+SOURCE FILE: src/chanmap.c
+/*
+** Copyright (C) 2009-2014 Erik de Castro Lopo <erikd@mega-nerd.com>
+**
+** This program is free software; you can redistribute it and/or modify
+** it under the terms of the GNU Lesser General Public License as published by
+** the Free Software Foundation; either version 2.1 of the License, or
+** (at your option) any later version.
+**
+** This program is distributed in the hope that it will be useful,
+** but WITHOUT ANY WARRANTY; without even the implied warranty of
+** MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+** GNU Lesser General Public License for more details.
+**
+** You should have received a copy of the GNU Lesser General Public License
+** along with this program; if not, write to the Free Software
+** Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+*/
+/*
+**	Mostly from "Apple Core Audio Format Specification 1.0":
+**
+**		http://developer.apple.com/documentation/MusicAudio/Reference/CAFSpec/CAFSpec.pdf
+*/
+
+SOURCE FILE: src/chunk.c
+/*
+** Copyright (C) 2008-2016 Erik de Castro Lopo <erikd@mega-nerd.com>
+** Copyright (C) 2012 IOhannes m zmoelnig, IEM <zmoelnig@iem.at>
+**
+** This program is free software; you can redistribute it and/or modify
+** it under the terms of the GNU Lesser General Public License as published by
+** the Free Software Foundation; either version 2.1 of the License, or
+** (at your option) any later version.
+**
+** This program is distributed in the hope that it will be useful,
+** but WITHOUT ANY WARRANTY; without even the implied warranty of
+** MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+** GNU Lesser General Public License for more details.
+**
+** You should have received a copy of the GNU Lesser General Public License
+** along with this program; if not, write to the Free Software
+** Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+*/
+
+SOURCE FILE: src/command.c
+/*
+** Copyright (C) 2001-2016 Erik de Castro Lopo <erikd@mega-nerd.com>
+**
+** This program is free software; you can redistribute it and/or modify
+** it under the terms of the GNU Lesser General Public License as published by
+** the Free Software Foundation; either version 2.1 of the License, or
+** (at your option) any later version.
+**
+** This program is distributed in the hope that it will be useful,
+** but WITHOUT ANY WARRANTY; without even the implied warranty of
+** MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+** GNU Lesser General Public License for more details.
+**
+** You should have received a copy of the GNU Lesser General Public License
+** along with this program; if not, write to the Free Software
+** Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+*/
+
+SOURCE FILE: src/common.c
+/*
+** Copyright (C) 1999-2019 Erik de Castro Lopo <erikd@mega-nerd.com>
+**
+** This program is free software; you can redistribute it and/or modify
+** it under the terms of the GNU Lesser General Public License as published by
+** the Free Software Foundation; either version 2.1 of the License, or
+** (at your option) any later version.
+**
+** This program is distributed in the hope that it will be useful,
+** but WITHOUT ANY WARRANTY; without even the implied warranty of
+** MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+** GNU Lesser General Public License for more details.
+**
+** You should have received a copy of the GNU Lesser General Public License
+** along with this program; if not, write to the Free Software
+** Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+*/
+
+SOURCE FILE: src/common.h
+/*
+** Copyright (C) 1999-2018 Erik de Castro Lopo <erikd@mega-nerd.com>
+**
+** This program is free software; you can redistribute it and/or modify
+** it under the terms of the GNU Lesser General Public License as published by
+** the Free Software Foundation; either version 2.1 of the License, or
+** (at your option) any later version.
+**
+** This program is distributed in the hope that it will be useful,
+** but WITHOUT ANY WARRANTY; without even the implied warranty of
+** MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+** GNU Lesser General Public License for more details.
+**
+** You should have received a copy of the GNU Lesser General Public License
+** along with this program; if not, write to the Free Software
+** Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+*/
+
+SOURCE FILE: src/dither.c
+/*
+** Copyright (C) 2003-2011 Erik de Castro Lopo <erikd@mega-nerd.com>
+**
+** This program is free software; you can redistribute it and/or modify
+** it under the terms of the GNU Lesser General Public License as published by
+** the Free Software Foundation; either version 2.1 of the License, or
+** (at your option) any later version.
+**
+** This program is distributed in the hope that it will be useful,
+** but WITHOUT ANY WARRANTY; without even the implied warranty of
+** MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+** GNU Lesser General Public License for more details.
+**
+** You should have received a copy of the GNU Lesser General Public License
+** along with this program; if not, write to the Free Software
+** Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+*/
+
+SOURCE FILE: src/double64.c
+/*
+** Copyright (C) 1999-2015 Erik de Castro Lopo <erikd@mega-nerd.com>
+**
+** This program is free software; you can redistribute it and/or modify
+** it under the terms of the GNU Lesser General Public License as published by
+** the Free Software Foundation; either version 2.1 of the License, or
+** (at your option) any later version.
+**
+** This program is distributed in the hope that it will be useful,
+** but WITHOUT ANY WARRANTY; without even the implied warranty of
+** MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+** GNU Lesser General Public License for more details.
+**
+** You should have received a copy of the GNU Lesser General Public License
+** along with this program; if not, write to the Free Software
+** Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+*/
+
+SOURCE FILE: src/dwd.c
+/*
+** Copyright (C) 2002-2012 Erik de Castro Lopo <erikd@mega-nerd.com>
+**
+** This program is free software; you can redistribute it and/or modify
+** it under the terms of the GNU Lesser General Public License as published by
+** the Free Software Foundation; either version 2.1 of the License, or
+** (at your option) any later version.
+**
+** This program is distributed in the hope that it will be useful,
+** but WITHOUT ANY WARRANTY; without even the implied warranty of
+** MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+** GNU Lesser General Public License for more details.
+**
+** You should have received a copy of the GNU Lesser General Public License
+** along with this program; if not, write to the Free Software
+** Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+*/
+
+SOURCE FILE: src/dwvw.c
+/*
+** Copyright (C) 2002-2014 Erik de Castro Lopo <erikd@mega-nerd.com>
+**
+** This program is free software; you can redistribute it and/or modify
+** it under the terms of the GNU Lesser General Public License as published by
+** the Free Software Foundation; either version 2.1 of the License, or
+** (at your option) any later version.
+**
+** This program is distributed in the hope that it will be useful,
+** but WITHOUT ANY WARRANTY; without even the implied warranty of
+** MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+** GNU Lesser General Public License for more details.
+**
+** You should have received a copy of the GNU Lesser General Public License
+** along with this program; if not, write to the Free Software
+** Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+*/
+/*===========================================================================
+** Delta Word Variable Width
+**
+** This decoder and encoder were implemented using information found in this
+** document : http://home.swbell.net/rubywand/R011SNDFMTS.TXT
+**
+** According to the document, the algorithm "was invented 1991 by Magnus
+** Lidstrom and is copyright 1993 by NuEdge Development".
+*/
+
+SOURCE FILE: src/file_io.c
+/*
+** Copyright (C) 2002-2014 Erik de Castro Lopo <erikd@mega-nerd.com>
+** Copyright (C) 2003 Ross Bencina <rbencina@iprimus.com.au>
+**
+** This program is free software; you can redistribute it and/or modify
+** it under the terms of the GNU Lesser General Public License as published by
+** the Free Software Foundation; either version 2.1 of the License, or
+** (at your option) any later version.
+**
+** This program is distributed in the hope that it will be useful,
+** but WITHOUT ANY WARRANTY; without even the implied warranty of
+** MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+** GNU Lesser General Public License for more details.
+**
+** You should have received a copy of the GNU Lesser General Public License
+** along with this program; if not, write to the Free Software
+** Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+*/
+/*
+**	The file is split into three sections as follows:
+**		- The top section (USE_WINDOWS_API == 0) for Linux, Unix and MacOSX
+**			systems (including Cygwin).
+**		- The middle section (USE_WINDOWS_API == 1) for microsoft windows
+**			(including MinGW) using the native windows API.
+**		- A legacy windows section which attempted to work around grevious
+**			bugs in microsoft's POSIX implementation.
+*/
+/*
+**	The header file sfconfig.h MUST be included before the others to ensure
+**	that large file support is enabled correctly on Unix systems.
+*/
+
+SOURCE FILE: src/flac.c
+/*
+** Copyright (C) 2004-2017 Erik de Castro Lopo <erikd@mega-nerd.com>
+** Copyright (C) 2004 Tobias Gehrig <tgehrig@ira.uka.de>
+**
+** This program is free software ; you can redistribute it and/or modify
+** it under the terms of the GNU Lesser General Public License as published by
+** the Free Software Foundation ; either version 2.1 of the License, or
+** (at your option) any later version.
+**
+** This program is distributed in the hope that it will be useful,
+** but WITHOUT ANY WARRANTY ; without even the implied warranty of
+** MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+** GNU Lesser General Public License for more details.
+**
+** You should have received a copy of the GNU Lesser General Public License
+** along with this program ; if not, write to the Free Software
+** Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+*/
+
+SOURCE FILE: src/float32.c
+/*
+** Copyright (C) 1999-2017 Erik de Castro Lopo <erikd@mega-nerd.com>
+**
+** This program is free software; you can redistribute it and/or modify
+** it under the terms of the GNU Lesser General Public License as published by
+** the Free Software Foundation; either version 2.1 of the License, or
+** (at your option) any later version.
+**
+** This program is distributed in the hope that it will be useful,
+** but WITHOUT ANY WARRANTY; without even the implied warranty of
+** MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+** GNU Lesser General Public License for more details.
+**
+** You should have received a copy of the GNU Lesser General Public License
+** along with this program; if not, write to the Free Software
+** Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+*/
+
+SOURCE FILE: src/g72x.c
+/*
+** Copyright (C) 1999-2014 Erik de Castro Lopo <erikd@mega-nerd.com>
+**
+** This program is free software; you can redistribute it and/or modify
+** it under the terms of the GNU Lesser General Public License as published by
+** the Free Software Foundation; either version 2.1 of the License, or
+** (at your option) any later version.
+**
+** This program is distributed in the hope that it will be useful,
+** but WITHOUT ANY WARRANTY; without even the implied warranty of
+** MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+** GNU Lesser General Public License for more details.
+**
+** You should have received a copy of the GNU Lesser General Public License
+** along with this program; if not, write to the Free Software
+** Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+*/
+
+SOURCE FILE: src/gsm610.c
+/*
+** Copyright (C) 1999-2019 Erik de Castro Lopo <erikd@mega-nerd.com>
+**
+** This program is free software; you can redistribute it and/or modify
+** it under the terms of the GNU Lesser General Public License as published by
+** the Free Software Foundation; either version 2.1 of the License, or
+** (at your option) any later version.
+**
+** This program is distributed in the hope that it will be useful,
+** but WITHOUT ANY WARRANTY; without even the implied warranty of
+** MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+** GNU Lesser General Public License for more details.
+**
+** You should have received a copy of the GNU Lesser General Public License
+** along with this program; if not, write to the Free Software
+** Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+*/
+
+SOURCE FILE: src/htk.c
+/*
+** Copyright (C) 2002-2017 Erik de Castro Lopo <erikd@mega-nerd.com>
+**
+** This program is free software; you can redistribute it and/or modify
+** it under the terms of the GNU Lesser General Public License as published by
+** the Free Software Foundation; either version 2.1 of the License, or
+** (at your option) any later version.
+**
+** This program is distributed in the hope that it will be useful,
+** but WITHOUT ANY WARRANTY; without even the implied warranty of
+** MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+** GNU Lesser General Public License for more details.
+**
+** You should have received a copy of the GNU Lesser General Public License
+** along with this program; if not, write to the Free Software
+** Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+*/
+
+SOURCE FILE: src/id3.c
+/*
+** Copyright (C) 2010-2017 Erik de Castro Lopo <erikd@mega-nerd.com>
+**
+** This program is free software; you can redistribute it and/or modify
+** it under the terms of the GNU Lesser General Public License as published by
+** the Free Software Foundation; either version 2.1 of the License, or
+** (at your option) any later version.
+**
+** This program is distributed in the hope that it will be useful,
+** but WITHOUT ANY WARRANTY; without even the implied warranty of
+** MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+** GNU Lesser General Public License for more details.
+**
+** You should have received a copy of the GNU Lesser General Public License
+** along with this program; if not, write to the Free Software
+** Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+*/
+
+SOURCE FILE: src/ima_adpcm.c
+/*
+** Copyright (C) 1999-2020 Erik de Castro Lopo <erikd@mega-nerd.com>
+**
+** This program is free software; you can redistribute it and/or modify
+** it under the terms of the GNU Lesser General Public License as published by
+** the Free Software Foundation; either version 2.1 of the License, or
+** (at your option) any later version.
+**
+** This program is distributed in the hope that it will be useful,
+** but WITHOUT ANY WARRANTY; without even the implied warranty of
+** MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+** GNU Lesser General Public License for more details.
+**
+** You should have received a copy of the GNU Lesser General Public License
+** along with this program; if not, write to the Free Software
+** Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+*/
+
+SOURCE FILE: src/ima_oki_adpcm.c
+/*
+** Copyright (C) 2007-2014 Erik de Castro Lopo <erikd@mega-nerd.com>
+** Copyright (c) 2007 <robs@users.sourceforge.net>
+**
+** This library is free software; you can redistribute it and/or modify it
+** under the terms of the GNU Lesser General Public License as published by
+** the Free Software Foundation; either version 2 of the License, or (at
+** your option) any later version.
+**
+** This library is distributed in the hope that it will be useful, but
+** WITHOUT ANY WARRANTY; without even the implied warranty of
+** MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU Lesser
+** General Public License for more details.
+**
+** You should have received a copy of the GNU Lesser General Public License
+** along with this library.  If not, write to the Free Software Foundation,
+** Fifth Floor, 51 Franklin Street, Boston, MA 02111-1301, USA.
+*/
+/* ADPCM: IMA, OKI <==> 16-bit PCM. */
+
+SOURCE FILE: src/interleave.c
+/*
+** Copyright (C) 2002-2013 Erik de Castro Lopo <erikd@mega-nerd.com>
+**
+** This program is free software; you can redistribute it and/or modify
+** it under the terms of the GNU Lesser General Public License as published by
+** the Free Software Foundation; either version 2.1 of the License, or
+** (at your option) any later version.
+**
+** This program is distributed in the hope that it will be useful,
+** but WITHOUT ANY WARRANTY; without even the implied warranty of
+** MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+** GNU Lesser General Public License for more details.
+**
+** You should have received a copy of the GNU Lesser General Public License
+** along with this program; if not, write to the Free Software
+** Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+*/
+
+SOURCE FILE: src/ircam.c
+/*
+** Copyright (C) 2001-2017 Erik de Castro Lopo <erikd@mega-nerd.com>
+**
+** This program is free software; you can redistribute it and/or modify
+** it under the terms of the GNU Lesser General Public License as published by
+** the Free Software Foundation; either version 2.1 of the License, or
+** (at your option) any later version.
+**
+** This program is distributed in the hope that it will be useful,
+** but WITHOUT ANY WARRANTY; without even the implied warranty of
+** MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+** GNU Lesser General Public License for more details.
+**
+** You should have received a copy of the GNU Lesser General Public License
+** along with this program; if not, write to the Free Software
+** Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+*/
+
+SOURCE FILE: src/macos.c
+/*
+** Copyright (C) 2003-2011 Erik de Castro Lopo <erikd@mega-nerd.com>
+**
+** This program is free software; you can redistribute it and/or modify
+** it under the terms of the GNU Lesser General Public License as published by
+** the Free Software Foundation; either version 2.1 of the License, or
+** (at your option) any later version.
+**
+** This program is distributed in the hope that it will be useful,
+** but WITHOUT ANY WARRANTY; without even the implied warranty of
+** MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+** GNU Lesser General Public License for more details.
+**
+** You should have received a copy of the GNU Lesser General Public License
+** along with this program; if not, write to the Free Software
+** Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+*/
+
+SOURCE FILE: src/mat4.c
+/*
+** Copyright (C) 2002-2017 Erik de Castro Lopo <erikd@mega-nerd.com>
+**
+** This program is free software; you can redistribute it and/or modify
+** it under the terms of the GNU Lesser General Public License as published by
+** the Free Software Foundation; either version 2.1 of the License, or
+** (at your option) any later version.
+**
+** This program is distributed in the hope that it will be useful,
+** but WITHOUT ANY WARRANTY; without even the implied warranty of
+** MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+** GNU Lesser General Public License for more details.
+**
+** You should have received a copy of the GNU Lesser General Public License
+** along with this program; if not, write to the Free Software
+** Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+*/
+
+SOURCE FILE: src/mat5.c
+/*
+** Copyright (C) 2002-2017 Erik de Castro Lopo <erikd@mega-nerd.com>
+**
+** This program is free software; you can redistribute it and/or modify
+** it under the terms of the GNU Lesser General Public License as published by
+** the Free Software Foundation; either version 2.1 of the License, or
+** (at your option) any later version.
+**
+** This program is distributed in the hope that it will be useful,
+** but WITHOUT ANY WARRANTY; without even the implied warranty of
+** MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+** GNU Lesser General Public License for more details.
+**
+** You should have received a copy of the GNU Lesser General Public License
+** along with this program; if not, write to the Free Software
+** Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+*/
+
+SOURCE FILE: src/mpc2k.c
+/*
+** Copyright (C) 2008-2017 Erik de Castro Lopo <erikd@mega-nerd.com>
+**
+** This program is free software; you can redistribute it and/or modify
+** it under the terms of the GNU Lesser General Public License as published by
+** the Free Software Foundation; either version 2.1 of the License, or
+** (at your option) any later version.
+**
+** This program is distributed in the hope that it will be useful,
+** but WITHOUT ANY WARRANTY; without even the implied warranty of
+** MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+** GNU Lesser General Public License for more details.
+**
+** You should have received a copy of the GNU Lesser General Public License
+** along with this program; if not, write to the Free Software
+** Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+*/
+
+SOURCE FILE: src/mpeg.c
+/*
+** Copyright (C) 2019 Erik de Castro Lopo <erikd@mega-nerd.com>
+** Copyright (C) 2021 Arthur Taylor <art@ified.ca>
+**
+** This program is free software ; you can redistribute it and/or modify
+** it under the terms of the GNU Lesser General Public License as published by
+** the Free Software Foundation ; either version 2.1 of the License, or
+** (at your option) any later version.
+**
+** This program is distributed in the hope that it will be useful,
+** but WITHOUT ANY WARRANTY ; without even the implied warranty of
+** MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+** GNU Lesser General Public License for more details.
+**
+** You should have received a copy of the GNU Lesser General Public License
+** along with this program ; if not, write to the Free Software
+** Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+*/
+
+SOURCE FILE: src/mpeg.h
+/*
+** Copyright (C) 2019 Erik de Castro Lopo <erikd@mega-nerd.com>
+** Copyright (C) 2019 Arthur Taylor <art@ified.ca>
+**
+** This program is free software ; you can redistribute it and/or modify
+** it under the terms of the GNU Lesser General Public License as published by
+** the Free Software Foundation ; either version 2.1 of the License, or
+** (at your option) any later version.
+**
+** This program is distributed in the hope that it will be useful,
+** but WITHOUT ANY WARRANTY ; without even the implied warranty of
+** MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+** GNU Lesser General Public License for more details.
+**
+** You should have received a copy of the GNU Lesser General Public License
+** along with this program ; if not, write to the Free Software
+** Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+*/
+
+SOURCE FILE: src/mpeg_decode.c
+/*
+** Copyright (C) 2019 - 2021 Arthur Taylor <art@ified.ca>
+** Copyright (C) 2019 Erik de Castro Lopo <erikd@mega-nerd.com>
+**
+** This program is free software ; you can redistribute it and/or modify
+** it under the terms of the GNU Lesser General Public License as published by
+** the Free Software Foundation ; either version 2.1 of the License, or
+** (at your option) any later version.
+**
+** This program is distributed in the hope that it will be useful,
+** but WITHOUT ANY WARRANTY ; without even the implied warranty of
+** MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+** GNU Lesser General Public License for more details.
+**
+** You should have received a copy of the GNU Lesser General Public License
+** along with this program ; if not, write to the Free Software
+** Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+*/
+
+SOURCE FILE: src/mpeg_l3_encode.c
+/*
+** Copyright (C) 2020 Arthur Taylor <art@ified.ca>
+** Copyright (C) 2019 Erik de Castro Lopo <erikd@mega-nerd.com>
+**
+** This program is free software ; you can redistribute it and/or modify
+** it under the terms of the GNU Lesser General Public License as published by
+** the Free Software Foundation ; either version 2.1 of the License, or
+** (at your option) any later version.
+**
+** This program is distributed in the hope that it will be useful,
+** but WITHOUT ANY WARRANTY ; without even the implied warranty of
+** MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+** GNU Lesser General Public License for more details.
+**
+** You should have received a copy of the GNU Lesser General Public License
+** along with this program ; if not, write to the Free Software
+** Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+*/
+
+SOURCE FILE: src/ms_adpcm.c
+/*
+** Copyright (C) 1999-2017 Erik de Castro Lopo <erikd@mega-nerd.com>
+**
+** This program is free software; you can redistribute it and/or modify
+** it under the terms of the GNU Lesser General Public License as published by
+** the Free Software Foundation; either version 2.1 of the License, or
+** (at your option) any later version.
+**
+** This program is distributed in the hope that it will be useful,
+** but WITHOUT ANY WARRANTY; without even the implied warranty of
+** MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+** GNU Lesser General Public License for more details.
+**
+** You should have received a copy of the GNU Lesser General Public License
+** along with this program; if not, write to the Free Software
+** Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+*/
+
+SOURCE FILE: src/nist.c
+/*
+** Copyright (C) 1999-2017 Erik de Castro Lopo <erikd@mega-nerd.com>
+**
+** This program is free software; you can redistribute it and/or modify
+** it under the terms of the GNU Lesser General Public License as published by
+** the Free Software Foundation; either version 2.1 of the License, or
+** (at your option) any later version.
+**
+** This program is distributed in the hope that it will be useful,
+** but WITHOUT ANY WARRANTY; without even the implied warranty of
+** MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+** GNU Lesser General Public License for more details.
+**
+** You should have received a copy of the GNU Lesser General Public License
+** along with this program; if not, write to the Free Software
+** Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+*/
+/*
+**	Some of the information used to read NIST files was gleaned from
+**	reading the code of Bill Schottstaedt's sndlib library
+**		ftp://ccrma-ftp.stanford.edu/pub/Lisp/sndlib.tar.gz
+**	However, no code from that package was used.
+*/
+
+SOURCE FILE: src/nms_adpcm.c
+/*
+** Copyright (C) 1999-2014 Erik de Castro Lopo <erikd@mega-nerd.com>
+** Copyright (C) 2017 Arthur Taylor <art@ified.ca>
+**
+** This program is free software; you can redistribute it and/or modify
+** it under the terms of the GNU Lesser General Public License as published by
+** the Free Software Foundation; either version 2.1 of the License, or
+** (at your option) any later version.
+**
+** This program is distributed in the hope that it will be useful,
+** but WITHOUT ANY WARRANTY; without even the implied warranty of
+** MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+** GNU Lesser General Public License for more details.
+**
+** You should have received a copy of the GNU Lesser General Public License
+** along with this program; if not, write to the Free Software
+** Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+*/
+/*
+** This is a Natural MicroSystems ADPCM encoder/decoder. It converts 14 bit linear
+** PCM to and from either a 2, 3, or 4 bit ADPCM. NMS-ADPCM does not have appeared
+** to have ever been publicly documented, and appears to have debuted in the early
+** 90s in the Natural Access suite of PC-based telephony products. Raw NMS ADPCM
+** files usually have a .vce extension, although this does not encode what bitrate
+** is used.
+**
+** NMS-ADPCM is an 'optimised variation' of the ITU G.726 ADPCM scheme. The dominant
+** variation is that it removes the tone (modem) operation mode, and it's associated
+** voice/modem transition detection. This simplifies the computation of the step
+** size multiplier, as all operations on it remain in a log domain.
+*/
+
+SOURCE FILE: src/ogg.c
+/*
+** Copyright (C) 2002-2019 Erik de Castro Lopo <erikd@mega-nerd.com>
+** Copyright (C) 2007 John ffitch
+** Copyright (C) 2018 Arthur Taylor <art@ified.ca>
+**
+** This program is free software ; you can redistribute it and/or modify
+** it under the terms of the GNU Lesser General Public License as published by
+** the Free Software Foundation ; either version 2.1 of the License, or
+** (at your option) any later version.
+**
+** This program is distributed in the hope that it will be useful,
+** but WITHOUT ANY WARRANTY ; without even the implied warranty of
+** MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.	 See the
+** GNU Lesser General Public License for more details.
+**
+** You should have received a copy of the GNU Lesser General Public License
+** along with this program ; if not, write to the Free Software
+** Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+*/
+/*
+** This file contains code based on OpusFile and Opus-Tools, both by
+** Xiph.Org. COPYING from each is identical and is as follows:
+**
+** Copyright (c) 1994-2013 Xiph.Org Foundation and contributors
+**
+** Redistribution and use in source and binary forms, with or without
+** modification, are permitted provided that the following conditions
+** are met:
+**
+** - Redistributions of source code must retain the above copyright
+** notice, this list of conditions and the following disclaimer.
+**
+** - Redistributions in binary form must reproduce the above copyright
+** notice, this list of conditions and the following disclaimer in the
+** documentation and/or other materials provided with the distribution.
+**
+** - Neither the name of the Xiph.Org Foundation nor the names of its
+** contributors may be used to endorse or promote products derived from
+** this software without specific prior written permission.
+**
+** THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+** ``AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+** LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+** A PARTICULAR PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL THE FOUNDATION
+** OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+** SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+** LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+** DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+** THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+** (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+** OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+*/
+
+SOURCE FILE: src/ogg_opus.c
+/*
+** Copyright (C) 2013-2020 Erik de Castro Lopo <erikd@mega-nerd.com>
+** Copyright (C) 2018 Arthur Taylor <art@ified.ca>
+**
+** This program is free software ; you can redistribute it and/or modify
+** it under the terms of the GNU Lesser General Public License as published by
+** the Free Software Foundation ; either version 2.1 of the License, or
+** (at your option) any later version.
+**
+** This program is distributed in the hope that it will be useful,
+** but WITHOUT ANY WARRANTY ; without even the implied warranty of
+** MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.	 See the
+** GNU Lesser General Public License for more details.
+**
+** You should have received a copy of the GNU Lesser General Public License
+** along with this program ; if not, write to the Free Software
+** Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+*/
+/*
+** This file contains code based on OpusFile and Opus-Tools, both by
+** Xiph.Org. COPYING from each is identical and is as follows:
+**
+** Copyright (c) 1994-2013 Xiph.Org Foundation and contributors
+**
+** Redistribution and use in source and binary forms, with or without
+** modification, are permitted provided that the following conditions
+** are met:
+**
+** - Redistributions of source code must retain the above copyright
+** notice, this list of conditions and the following disclaimer.
+**
+** - Redistributions in binary form must reproduce the above copyright
+** notice, this list of conditions and the following disclaimer in the
+** documentation and/or other materials provided with the distribution.
+**
+** - Neither the name of the Xiph.Org Foundation nor the names of its
+** contributors may be used to endorse or promote products derived from
+** this software without specific prior written permission.
+**
+** THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+** ``AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+** LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+** A PARTICULAR PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL THE FOUNDATION
+** OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+** SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+** LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+** DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+** THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+** (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+** OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+*/
+/*
+** TODO:
+**  - Channel mapping modification / reporting
+**	 - connect psf->channel_map and Opus channel mapping somehow?
+**  - Gain parameters and their mappings
+*/
+/*
+** Opus Sample, Frame, and Samples/Channel Terminology
+**
+** libsndfile refers to one PCM value as a 'sample,' and a group of samples of
+** the same sample time, one for each channel, as a 'frame.' This differs from
+** Opus, which has no corresponding name for sample, and refers to a group of
+** PCM values, one per channel (aka libsndfile frames) as 'samples.'
+** Further, Opus has an object called a 'frame' that is made up of multiple
+** Opus-samples.
+** All this means that one has to be careful with what is meant by each term.
+** In an attempt to avoid ambiguity, this file adopts the following terms:
+**  - Samples shall refer to discrete PCM values, regardless of any channel
+**	considerations. This is the same as what libsndfile calls samples.
+**  - Samples/channel shall refer to groups of samples, one for each channel.
+**	This is what Opus calles samples, and what libsndfile calles frames. It
+**	has the advantage that its name is also the formula to calculate it.
+**
+**
+** Opus vs OggOpus
+**
+** In this file a distinction is made between Opus and OggOpus. Opus refers to
+** the codec alone, support for which is by libopus. OggOpus refers to an Opus
+** payload encapsulated in an Ogg stream. This is also know as an "Opus file."
+** The OggOpus spec includes information on header and granule position
+** interpretation, which is outside of the scope of the Opus spec. As such, an
+** attempt here is made to refer to either Opus or OggOpus depending on which
+** spec is being referenced. See https://wiki.xiph.org/OggOpus
+**
+**
+** Opus Sample Rates
+**
+** Opus only supports a fixed number of sample rates: 48kHz, 24kHz, 16kHz,
+** 12kHz, 8kHz. Audio may be decoded or encoded at any of these rates,
+** independent of the rate it was encoded at or to be decoded at respectively.
+** Other sample rates must be converted to one of these rates.
+**
+** As 44.1kHz (CD sample rate) and 22.5kHz are popular sample rates, and to
+** support any other sample rate there may be, the Opus header includes a field
+** to save the input (original) sample rate before converting it to a supported
+** one. Implementations are recommended by the Opus spec to do a sample rate
+** conversion at encode, but decode at 48kHz if outputting to hardware, or do
+** the reverse sample rate conversion if outputting to file.
+**
+** Heretofore libsndfile does not contain a sample rate converter, so doing the
+** sample rate conversion is not supported. Instead audio must be provided by
+** the user at a supported rate. However, the input sample rate field can be
+** set and retrieved by the user using sf_command(). At decode we choose to
+** decode at the lowest valid rate that is greater than or equal to the input
+** sample rate.
+**
+**
+** OggOpus Granule Positions
+**
+** Ogg streams include a strictly increasing granule position value. The
+** interpretation of this value is dependent on the payload type. For Opus
+** streams the granule position is the count of samples in the stream when
+** encoding/decoding at 48kHz. Note that the actual position of the output
+** sample relative to the granule position is offset by the preskip amount.
+** That is, if a packet ends with a granule position of x, the last sample
+** output when decoding is actually sample (x - preskip).
+**
+** Further, to allow for clipping off of the front of a stream without
+** rewriting all following granule positions, an Opus stream granule position
+** may be offset by a constant amount. This amount is evident by comparing the
+** granule position of the first page of an Opus stream on which an audio
+** packet completes is greater than the sum of the samples of all audio
+** packets completed on the page. Only the first such page is allows to have an
+** 'excessive' granule position, and only if it is not also the last page of
+** the stream (e_o_s bit is not set.)
+**
+** The granule position is an unsigned 64-bit integer, with the special value
+** of UINT64_MAX/-1 being treated as invalid. However, as not all platforms
+** support unsigned 64-bit integers, libOgg uses signed 64-bit integers for the
+** granule position.
+**
+** Remembering that signed integer overflow/underflow is explicitly undefined
+** in C, and as we already assume support for unsigned 64-bit integers, the
+** easiest way to deal with this problem is to modify granule positions as
+** unsigned integers.
+*/
+
+SOURCE FILE: src/ogg_pcm.c
+/*
+** Copyright (C) 2008-2016 Erik de Castro Lopo <erikd@mega-nerd.com>
+**
+** This program is free software ; you can redistribute it and/or modify
+** it under the terms of the GNU Lesser General Public License as published by
+** the Free Software Foundation ; either version 2.1 of the License, or
+** (at your option) any later version.
+**
+** This program is distributed in the hope that it will be useful,
+** but WITHOUT ANY WARRANTY ; without even the implied warranty of
+** MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.	 See the
+** GNU Lesser General Public License for more details.
+**
+** You should have received a copy of the GNU Lesser General Public License
+** along with this program ; if not, write to the Free Software
+** Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+*/
+
+SOURCE FILE: src/ogg_speex.c
+/*
+** Copyright (C) 2008-2016 Erik de Castro Lopo <erikd@mega-nerd.com>
+**
+** This program is free software ; you can redistribute it and/or modify
+** it under the terms of the GNU Lesser General Public License as published by
+** the Free Software Foundation ; either version 2.1 of the License, or
+** (at your option) any later version.
+**
+** This program is distributed in the hope that it will be useful,
+** but WITHOUT ANY WARRANTY ; without even the implied warranty of
+** MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.	 See the
+** GNU Lesser General Public License for more details.
+**
+** You should have received a copy of the GNU Lesser General Public License
+** along with this program ; if not, write to the Free Software
+** Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+*/
+
+SOURCE FILE: src/ogg_vcomment.c
+/*
+** Copyright (C) 2008-2019 Erik de Castro Lopo <erikd@mega-nerd.com>
+** Copyright (C) 2018 Arthur Taylor <art@ified.ca>
+**
+** This program is free software ; you can redistribute it and/or modify
+** it under the terms of the GNU Lesser General Public License as published by
+** the Free Software Foundation ; either version 2.1 of the License, or
+** (at your option) any later version.
+**
+** This program is distributed in the hope that it will be useful,
+** but WITHOUT ANY WARRANTY ; without even the implied warranty of
+** MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.	 See the
+** GNU Lesser General Public License for more details.
+**
+** You should have received a copy of the GNU Lesser General Public License
+** along with this program ; if not, write to the Free Software
+** Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+*/
+
+SOURCE FILE: src/ogg_vorbis.c
+/*
+** Copyright (C) 2018-2021 Arthur Taylor <art@ified.ca>
+** Copyright (C) 2002-2016 Erik de Castro Lopo <erikd@mega-nerd.com>
+** Copyright (C) 2002-2005 Michael Smith <msmith@xiph.org>
+** Copyright (C) 2007 John ffitch
+**
+** This program is free software ; you can redistribute it and/or modify
+** it under the terms of the GNU Lesser General Public License as published by
+** the Free Software Foundation ; either version 2.1 of the License, or
+** (at your option) any later version.
+**
+** This program is distributed in the hope that it will be useful,
+** but WITHOUT ANY WARRANTY ; without even the implied warranty of
+** MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.	 See the
+** GNU Lesser General Public License for more details.
+**
+** You should have received a copy of the GNU Lesser General Public License
+** along with this program ; if not, write to the Free Software
+** Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+*/
+/*
+** Much of this code is based on the examples in libvorbis from the
+** XIPHOPHORUS Company http://www.xiph.org/ which has a BSD-style Licence
+** Copyright (c) 2002, Xiph.org Foundation
+**
+** Redistribution and use in source and binary forms, with or without
+** modification, are permitted provided that the following conditions
+** are met:
+**
+** - Redistributions of source code must retain the above copyright
+** notice, this list of conditions and the following disclaimer.
+**
+** - Redistributions in binary form must reproduce the above copyright
+** notice, this list of conditions and the following disclaimer in the
+** documentation and/or other materials provided with the distribution.
+**
+** - Neither the name of the Xiph.org Foundation nor the names of its
+** contributors may be used to endorse or promote products derived from
+** this software without specific prior written permission.
+**
+** THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+** ``AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+** LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+** A PARTICULAR PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL THE FOUNDATION
+** OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+** SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+** LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES ; LOSS OF USE,
+** DATA, OR PROFITS ; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+** THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+** (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+** OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+*/
+
+SOURCE FILE: src/paf.c
+/*
+** Copyright (C) 1999-2017 Erik de Castro Lopo <erikd@mega-nerd.com>
+**
+** This program is free software; you can redistribute it and/or modify
+** it under the terms of the GNU Lesser General Public License as published by
+** the Free Software Foundation; either version 2.1 of the License, or
+** (at your option) any later version.
+**
+** This program is distributed in the hope that it will be useful,
+** but WITHOUT ANY WARRANTY; without even the implied warranty of
+** MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+** GNU Lesser General Public License for more details.
+**
+** You should have received a copy of the GNU Lesser General Public License
+** along with this program; if not, write to the Free Software
+** Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+*/
+
+SOURCE FILE: src/pcm.c
+/*
+** Copyright (C) 1999-2016 Erik de Castro Lopo <erikd@mega-nerd.com>
+**
+** This program is free software; you can redistribute it and/or modify
+** it under the terms of the GNU Lesser General Public License as published by
+** the Free Software Foundation; either version 2.1 of the License, or
+** (at your option) any later version.
+**
+** This program is distributed in the hope that it will be useful,
+** but WITHOUT ANY WARRANTY; without even the implied warranty of
+** MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+** GNU Lesser General Public License for more details.
+**
+** You should have received a copy of the GNU Lesser General Public License
+** along with this program; if not, write to the Free Software
+** Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+*/
+
+SOURCE FILE: src/pvf.c
+/*
+** Copyright (C) 2002-2016 Erik de Castro Lopo <erikd@mega-nerd.com>
+**
+** This program is free software; you can redistribute it and/or modify
+** it under the terms of the GNU Lesser General Public License as published by
+** the Free Software Foundation; either version 2.1 of the License, or
+** (at your option) any later version.
+**
+** This program is distributed in the hope that it will be useful,
+** but WITHOUT ANY WARRANTY; without even the implied warranty of
+** MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+** GNU Lesser General Public License for more details.
+**
+** You should have received a copy of the GNU Lesser General Public License
+** along with this program; if not, write to the Free Software
+** Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+*/
+
+SOURCE FILE: src/raw.c
+/*
+** Copyright (C) 1999-2011 Erik de Castro Lopo <erikd@mega-nerd.com>
+**
+** This program is free software; you can redistribute it and/or modify
+** it under the terms of the GNU Lesser General Public License as published by
+** the Free Software Foundation; either version 2.1 of the License, or
+** (at your option) any later version.
+**
+** This program is distributed in the hope that it will be useful,
+** but WITHOUT ANY WARRANTY; without even the implied warranty of
+** MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+** GNU Lesser General Public License for more details.
+**
+** You should have received a copy of the GNU Lesser General Public License
+** along with this program; if not, write to the Free Software
+** Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+*/
+
+SOURCE FILE: src/rf64.c
+/*
+** Copyright (C) 2008-2018 Erik de Castro Lopo <erikd@mega-nerd.com>
+** Copyright (C) 2009      Uli Franke <cls@nebadje.org>
+**
+** This program is free software; you can redistribute it and/or modify
+** it under the terms of the GNU Lesser General Public License as published by
+** the Free Software Foundation; either version 2.1 of the License, or
+** (at your option) any later version.
+**
+** This program is distributed in the hope that it will be useful,
+** but WITHOUT ANY WARRANTY; without even the implied warranty of
+** MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+** GNU Lesser General Public License for more details.
+**
+** You should have received a copy of the GNU Lesser General Public License
+** along with this program; if not, write to the Free Software
+** Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+*/
+/*
+**	This format documented at:
+**	http://www.sr.se/utveckling/tu/bwf/prog/RF_64v1_4.pdf
+**
+**	But this may be a better reference:
+**	http://www.ebu.ch/CMSimages/en/tec_doc_t3306-2007_tcm6-42570.pdf
+*/
+
+SOURCE FILE: src/rx2.c
+/*
+** Copyright (C) 2001-2012 Erik de Castro Lopo <erikd@mega-nerd.com>
+**
+** This program is free software; you can redistribute it and/or modify
+** it under the terms of the GNU Lesser General Public License as published by
+** the Free Software Foundation; either version 2.1 of the License, or
+** (at your option) any later version.
+**
+** This program is distributed in the hope that it will be useful,
+** but WITHOUT ANY WARRANTY; without even the implied warranty of
+** MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+** GNU Lesser General Public License for more details.
+**
+** You should have received a copy of the GNU Lesser General Public License
+** along with this program; if not, write to the Free Software
+** Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+*/
+
+SOURCE FILE: src/sd2.c
+/*
+** Copyright (C) 2001-2020 Erik de Castro Lopo <erikd@mega-nerd.com>
+** Copyright (C) 2004 Paavo Jumppanen
+**
+** This program is free software; you can redistribute it and/or modify
+** it under the terms of the GNU Lesser General Public License as published by
+** the Free Software Foundation; either version 2.1 of the License, or
+** (at your option) any later version.
+**
+** This program is distributed in the hope that it will be useful,
+** but WITHOUT ANY WARRANTY; without even the implied warranty of
+** MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+** GNU Lesser General Public License for more details.
+**
+** You should have received a copy of the GNU Lesser General Public License
+** along with this program; if not, write to the Free Software
+** Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+*/
+/*
+** The sd2 support implemented in this file was partially sponsored
+** (financially) by Paavo Jumppanen.
+*/
+/*
+** Documentation on the Mac resource fork was obtained here :
+** http://developer.apple.com/documentation/mac/MoreToolbox/MoreToolbox-99.html
+*/
+
+SOURCE FILE: src/sds.c
+/*
+** Copyright (C) 2002-2017 Erik de Castro Lopo <erikd@mega-nerd.com>
+**
+** This program is free software; you can redistribute it and/or modify
+** it under the terms of the GNU Lesser General Public License as published by
+** the Free Software Foundation; either version 2.1 of the License, or
+** (at your option) any later version.
+**
+** This program is distributed in the hope that it will be useful,
+** but WITHOUT ANY WARRANTY; without even the implied warranty of
+** MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+** GNU Lesser General Public License for more details.
+**
+** You should have received a copy of the GNU Lesser General Public License
+** along with this program; if not, write to the Free Software
+** Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+*/
+
+SOURCE FILE: src/sf_unistd.h
+/*
+** Copyright (C) 2002-2017 Erik de Castro Lopo <erikd@mega-nerd.com>
+**
+** This program is free software; you can redistribute it and/or modify
+** it under the terms of the GNU Lesser General Public License as published by
+** the Free Software Foundation; either version 2.1 of the License, or
+** (at your option) any later version.
+**
+** This program is distributed in the hope that it will be useful,
+** but WITHOUT ANY WARRANTY; without even the implied warranty of
+** MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+** GNU Lesser General Public License for more details.
+**
+** You should have received a copy of the GNU Lesser General Public License
+** along with this program; if not, write to the Free Software
+** Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+*/
+/* Microsoft declares some 'unistd.h' functions in 'io.h'. */
+
+SOURCE FILE: src/sfconfig.h
+/*
+** Copyright (C) 2005-2017 Erik de Castro Lopo <erikd@mega-nerd.com>
+**
+** This program is free software; you can redistribute it and/or modify
+** it under the terms of the GNU Lesser General Public License as published by
+** the Free Software Foundation; either version 2.1 of the License, or
+** (at your option) any later version.
+**
+** This program is distributed in the hope that it will be useful,
+** but WITHOUT ANY WARRANTY; without even the implied warranty of
+** MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+** GNU Lesser General Public License for more details.
+**
+** You should have received a copy of the GNU Lesser General Public License
+** along with this program; if not, write to the Free Software
+** Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+*/
+/*
+**	Autoconf leaves many config parameters undefined.
+**	Here we change then from being undefined to defining them to 0.
+**	This allows things like:
+**
+**		#if HAVE_CONFIG_PARAM
+**
+**	and
+**
+**		if (HAVE_CONFIG_PARAM)
+**			do_something () ;
+*/
+/* Include the Autoconf generated file. */
+
+SOURCE FILE: src/sfendian.h
+/*
+** Copyright (C) 1999-2018 Erik de Castro Lopo <erikd@mega-nerd.com>
+**
+** This program is free software; you can redistribute it and/or modify
+** it under the terms of the GNU Lesser General Public License as published by
+** the Free Software Foundation; either version 2.1 of the License, or
+** (at your option) any later version.
+**
+** This program is distributed in the hope that it will be useful,
+** but WITHOUT ANY WARRANTY; without even the implied warranty of
+** MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+** GNU Lesser General Public License for more details.
+**
+** You should have received a copy of the GNU Lesser General Public License
+** along with this program; if not, write to the Free Software
+** Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+*/
+
+SOURCE FILE: src/sndfile.c
+/*
+** Copyright (C) 1999-2018 Erik de Castro Lopo <erikd@mega-nerd.com>
+**
+** This program is free software; you can redistribute it and/or modify
+** it under the terms of the GNU Lesser General Public License as published by
+** the Free Software Foundation; either version 2.1 of the License, or
+** (at your option) any later version.
+**
+** This program is distributed in the hope that it will be useful,
+** but WITHOUT ANY WARRANTY; without even the implied warranty of
+** MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+** GNU Lesser General Public License for more details.
+**
+** You should have received a copy of the GNU Lesser General Public License
+** along with this program; if not, write to the Free Software
+** Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+*/
+
+SOURCE FILE: src/strings.c
+/*
+** Copyright (C) 2001-2016 Erik de Castro Lopo <erikd@mega-nerd.com>
+**
+** This program is free software; you can redistribute it and/or modify
+** it under the terms of the GNU Lesser General Public License as published by
+** the Free Software Foundation; either version 2.1 of the License, or
+** (at your option) any later version.
+**
+** This program is distributed in the hope that it will be useful,
+** but WITHOUT ANY WARRANTY; without even the implied warranty of
+** MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+** GNU Lesser General Public License for more details.
+**
+** You should have received a copy of the GNU Lesser General Public License
+** along with this program; if not, write to the Free Software
+** Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+*/
+
+SOURCE FILE: src/svx.c
+/*
+** Copyright (C) 1999-2017 Erik de Castro Lopo <erikd@mega-nerd.com>
+**
+** This program is free software; you can redistribute it and/or modify
+** it under the terms of the GNU Lesser General Public License as published by
+** the Free Software Foundation; either version 2.1 of the License, or
+** (at your option) any later version.
+**
+** This program is distributed in the hope that it will be useful,
+** but WITHOUT ANY WARRANTY; without even the implied warranty of
+** MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+** GNU Lesser General Public License for more details.
+**
+** You should have received a copy of the GNU Lesser General Public License
+** along with this program; if not, write to the Free Software
+** Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+*/
+
+SOURCE FILE: src/test_audio_detect.c
+/*
+** Copyright (C) 2007-2011 Erik de Castro Lopo <erikd@mega-nerd.com>
+**
+** This program is free software; you can redistribute it and/or modify
+** it under the terms of the GNU Lesser General Public License as published by
+** the Free Software Foundation; either version 2.1 of the License, or
+** (at your option) any later version.
+**
+** This program is distributed in the hope that it will be useful,
+** but WITHOUT ANY WARRANTY; without even the implied warranty of
+** MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+** GNU Lesser General Public License for more details.
+**
+** You should have received a copy of the GNU Lesser General Public License
+** along with this program; if not, write to the Free Software
+** Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+*/
+
+SOURCE FILE: src/test_binheader_writef.c
+/*
+** Copyright (C) 2017 Erik de Castro Lopo <erikd@mega-nerd.com>
+**
+** This program is free software; you can redistribute it and/or modify
+** it under the terms of the GNU Lesser General Public License as published by
+** the Free Software Foundation; either version 2.1 of the License, or
+** (at your option) any later version.
+**
+** This program is distributed in the hope that it will be useful,
+** but WITHOUT ANY WARRANTY; without even the implied warranty of
+** MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+** GNU Lesser General Public License for more details.
+**
+** You should have received a copy of the GNU Lesser General Public License
+** along with this program; if not, write to the Free Software
+** Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+*/
+
+SOURCE FILE: src/test_broadcast_var.c
+/*
+** Copyright (C) 2010-2012 Erik de Castro Lopo <erikd@mega-nerd.com>
+**
+** This program is free software; you can redistribute it and/or modify
+** it under the terms of the GNU Lesser General Public License as published by
+** the Free Software Foundation; either version 2.1 of the License, or
+** (at your option) any later version.
+**
+** This program is distributed in the hope that it will be useful,
+** but WITHOUT ANY WARRANTY; without even the implied warranty of
+** MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+** GNU Lesser General Public License for more details.
+**
+** You should have received a copy of the GNU Lesser General Public License
+** along with this program; if not, write to the Free Software
+** Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+*/
+
+SOURCE FILE: src/test_cart_var.c
+/*
+** Copyright (C) 2010-2013 Erik de Castro Lopo <erikd@mega-nerd.com>
+**
+** This program is free software; you can redistribute it and/or modify
+** it under the terms of the GNU Lesser General Public License as published by
+** the Free Software Foundation; either version 2.1 of the License, or
+** (at your option) any later version.
+**
+** This program is distributed in the hope that it will be useful,
+** but WITHOUT ANY WARRANTY; without even the implied warranty of
+** MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+** GNU Lesser General Public License for more details.
+**
+** You should have received a copy of the GNU Lesser General Public License
+** along with this program; if not, write to the Free Software
+** Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+*/
+
+SOURCE FILE: src/test_conversions.c
+/*
+** Copyright (C) 2006-2016 Erik de Castro Lopo <erikd@mega-nerd.com>
+**
+** This program is free software; you can redistribute it and/or modify
+** it under the terms of the GNU Lesser General Public License as published by
+** the Free Software Foundation; either version 2.1 of the License, or
+** (at your option) any later version.
+**
+** This program is distributed in the hope that it will be useful,
+** but WITHOUT ANY WARRANTY; without even the implied warranty of
+** MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+** GNU Lesser General Public License for more details.
+**
+** You should have received a copy of the GNU Lesser General Public License
+** along with this program; if not, write to the Free Software
+** Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+*/
+
+SOURCE FILE: src/test_endswap.c
+/*
+** Copyright (C) 2002-2016 Erik de Castro Lopo <erikd@mega-nerd.com>
+**
+** This program is free software; you can redistribute it and/or modify
+** it under the terms of the GNU Lesser General Public License as published by
+** the Free Software Foundation; either version 2.1 of the License, or
+** (at your option) any later version.
+**
+** This program is distributed in the hope that it will be useful,
+** but WITHOUT ANY WARRANTY; without even the implied warranty of
+** MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+** GNU Lesser General Public License for more details.
+**
+** You should have received a copy of the GNU Lesser General Public License
+** along with this program; if not, write to the Free Software
+** Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+*/
+
+SOURCE FILE: src/test_file_io.c
+/*
+** Copyright (C) 2002-2011 Erik de Castro Lopo <erikd@mega-nerd.com>
+**
+** This program is free software; you can redistribute it and/or modify
+** it under the terms of the GNU Lesser General Public License as published by
+** the Free Software Foundation; either version 2.1 of the License, or
+** (at your option) any later version.
+**
+** This program is distributed in the hope that it will be useful,
+** but WITHOUT ANY WARRANTY; without even the implied warranty of
+** MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+** GNU Lesser General Public License for more details.
+**
+** You should have received a copy of the GNU Lesser General Public License
+** along with this program; if not, write to the Free Software
+** Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+*/
+
+SOURCE FILE: src/test_float.c
+/*
+** Copyright (C) 2006-2012 Erik de Castro Lopo <erikd@mega-nerd.com>
+**
+** This program is free software; you can redistribute it and/or modify
+** it under the terms of the GNU Lesser General Public License as published by
+** the Free Software Foundation; either version 2.1 of the License, or
+** (at your option) any later version.
+**
+** This program is distributed in the hope that it will be useful,
+** but WITHOUT ANY WARRANTY; without even the implied warranty of
+** MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+** GNU Lesser General Public License for more details.
+**
+** You should have received a copy of the GNU Lesser General Public License
+** along with this program; if not, write to the Free Software
+** Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+*/
+
+SOURCE FILE: src/test_ima_oki_adpcm.c
+/*
+** Copyright (C) 2007-2011 Erik de Castro Lopo <erikd@mega-nerd.com>
+** Copyright (c) 2007 <robs@users.sourceforge.net>
+**
+** This library is free software; you can redistribute it and/or modify it
+** under the terms of the GNU Lesser General Public License as published by
+** the Free Software Foundation; either version 2 of the License, or (at
+** your option) any later version.
+**
+** This library is distributed in the hope that it will be useful, but
+** WITHOUT ANY WARRANTY; without even the implied warranty of
+** MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU Lesser
+** General Public License for more details.
+**
+** You should have received a copy of the GNU Lesser General Public License
+** along with this library.  If not, write to the Free Software Foundation,
+** Fifth Floor, 51 Franklin Street, Boston, MA 02111-1301, USA.
+*/
+
+SOURCE FILE: src/test_log_printf.c
+/*
+** Copyright (C) 2003-2012 Erik de Castro Lopo <erikd@mega-nerd.com>
+**
+** This program is free software; you can redistribute it and/or modify
+** it under the terms of the GNU Lesser General Public License as published by
+** the Free Software Foundation; either version 2.1 of the License, or
+** (at your option) any later version.
+**
+** This program is distributed in the hope that it will be useful,
+** but WITHOUT ANY WARRANTY; without even the implied warranty of
+** MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+** GNU Lesser General Public License for more details.
+**
+** You should have received a copy of the GNU Lesser General Public License
+** along with this program; if not, write to the Free Software
+** Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+*/
+
+SOURCE FILE: src/test_main.c
+/*
+** Copyright (C) 2008-2016 Erik de Castro Lopo <erikd@mega-nerd.com>
+**
+** This program is free software; you can redistribute it and/or modify
+** it under the terms of the GNU Lesser General Public License as published by
+** the Free Software Foundation; either version 2.1 of the License, or
+** (at your option) any later version.
+**
+** This program is distributed in the hope that it will be useful,
+** but WITHOUT ANY WARRANTY; without even the implied warranty of
+** MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+** GNU Lesser General Public License for more details.
+**
+** You should have received a copy of the GNU Lesser General Public License
+** along with this program; if not, write to the Free Software
+** Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+*/
+
+SOURCE FILE: src/test_nms_adpcm.c
+/*
+** Copyright (C) 2007-2018 Erik de Castro Lopo <erikd@mega-nerd.com>
+** Copyright (C) 2017-2018 Arthur Taylor <art@ified.ca>
+**
+** This library is free software; you can redistribute it and/or modify it
+** under the terms of the GNU Lesser General Public License as published by
+** the Free Software Foundation; either version 2 of the License, or (at
+** your option) any later version.
+**
+** This library is distributed in the hope that it will be useful, but
+** WITHOUT ANY WARRANTY; without even the implied warranty of
+** MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU Lesser
+** General Public License for more details.
+**
+** You should have received a copy of the GNU Lesser General Public License
+** along with this library.  If not, write to the Free Software Foundation,
+** Fifth Floor, 51 Franklin Street, Boston, MA 02111-1301, USA.
+*/
+
+SOURCE FILE: src/test_strncpy_crlf.c
+/*
+** Copyright (C) 2010-2012 Erik de Castro Lopo <erikd@mega-nerd.com>
+**
+** This program is free software; you can redistribute it and/or modify
+** it under the terms of the GNU Lesser General Public License as published by
+** the Free Software Foundation; either version 2.1 of the License, or
+** (at your option) any later version.
+**
+** This program is distributed in the hope that it will be useful,
+** but WITHOUT ANY WARRANTY; without even the implied warranty of
+** MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+** GNU Lesser General Public License for more details.
+**
+** You should have received a copy of the GNU Lesser General Public License
+** along with this program; if not, write to the Free Software
+** Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+*/
+
+SOURCE FILE: src/txw.c
+/*
+** Copyright (C) 2002-2012 Erik de Castro Lopo <erikd@mega-nerd.com>
+**
+** This program is free software; you can redistribute it and/or modify
+** it under the terms of the GNU Lesser General Public License as published by
+** the Free Software Foundation; either version 2.1 of the License, or
+** (at your option) any later version.
+**
+** This program is distributed in the hope that it will be useful,
+** but WITHOUT ANY WARRANTY; without even the implied warranty of
+** MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+** GNU Lesser General Public License for more details.
+**
+** You should have received a copy of the GNU Lesser General Public License
+** along with this program; if not, write to the Free Software
+** Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+*/
+/*===========================================================================
+** Yamaha TX16 Sampler Files.
+**
+** This header parser was written using information from the SoX source code
+** and trial and error experimentation. The code here however is all original.
+*/
+
+SOURCE FILE: src/ulaw.c
+/*
+** Copyright (C) 1999-2013 Erik de Castro Lopo <erikd@mega-nerd.com>
+**
+** This program is free software; you can redistribute it and/or modify
+** it under the terms of the GNU Lesser General Public License as published by
+** the Free Software Foundation; either version 2.1 of the License, or
+** (at your option) any later version.
+**
+** This program is distributed in the hope that it will be useful,
+** but WITHOUT ANY WARRANTY; without even the implied warranty of
+** MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+** GNU Lesser General Public License for more details.
+**
+** You should have received a copy of the GNU Lesser General Public License
+** along with this program; if not, write to the Free Software
+** Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+*/
+
+SOURCE FILE: src/voc.c
+/*
+** Copyright (C) 2001-2018 Erik de Castro Lopo <erikd@mega-nerd.com>
+**
+** This program is free software; you can redistribute it and/or modify
+** it under the terms of the GNU Lesser General Public License as published by
+** the Free Software Foundation; either version 2.1 of the License, or
+** (at your option) any later version.
+**
+** This program is distributed in the hope that it will be useful,
+** but WITHOUT ANY WARRANTY; without even the implied warranty of
+** MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+** GNU Lesser General Public License for more details.
+**
+** You should have received a copy of the GNU Lesser General Public License
+** along with this program; if not, write to the Free Software
+** Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+*/
+/*	RANT:
+**	The VOC file format is the most brain damaged format I have yet had to deal
+**	with. No one programmer could have bee stupid enough to put this together.
+**	Instead it looks like a series of manic, dyslexic assembly language programmers
+**	hacked it to fit their needs.
+**	Utterly woeful.
+*/
+
+SOURCE FILE: src/vox_adpcm.c
+/*
+** Copyright (C) 2002-2014 Erik de Castro Lopo <erikd@mega-nerd.com>
+**
+** This program is free software; you can redistribute it and/or modify
+** it under the terms of the GNU Lesser General Public License as published by
+** the Free Software Foundation; either version 2.1 of the License, or
+** (at your option) any later version.
+**
+** This program is distributed in the hope that it will be useful,
+** but WITHOUT ANY WARRANTY; without even the implied warranty of
+** MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+** GNU Lesser General Public License for more details.
+**
+** You should have received a copy of the GNU Lesser General Public License
+** along with this program; if not, write to the Free Software
+** Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+*/
+/*
+**	This is the OKI / Dialogic ADPCM encoder/decoder. It converts from
+**	12 bit linear sample data to a 4 bit ADPCM.
+*/
+/*
+ * Note: some early Dialogic hardware does not always reset the ADPCM encoder
+ * at the start of each vox file. This can result in clipping and/or DC offset
+ * problems when it comes to decoding the audio. Whilst little can be done
+ * about the clipping, a DC offset can be removed by passing the decoded audio
+ * through a high-pass filter at e.g. 10Hz.
+ */
+
+SOURCE FILE: src/w64.c
+/*
+** Copyright (C) 1999-2018 Erik de Castro Lopo <erikd@mega-nerd.com>
+**
+** This program is free software; you can redistribute it and/or modify
+** it under the terms of the GNU Lesser General Public License as published by
+** the Free Software Foundation; either version 2.1 of the License, or
+** (at your option) any later version.
+**
+** This program is distributed in the hope that it will be useful,
+** but WITHOUT ANY WARRANTY; without even the implied warranty of
+** MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+** GNU Lesser General Public License for more details.
+**
+** You should have received a copy of the GNU Lesser General Public License
+** along with this program; if not, write to the Free Software
+** Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+*/
+
+SOURCE FILE: src/wav.c
+/*
+** Copyright (C) 1999-2019 Erik de Castro Lopo <erikd@mega-nerd.com>
+** Copyright (C) 2004-2005 David Viens <davidv@plogue.com>
+**
+** This program is free software; you can redistribute it and/or modify
+** it under the terms of the GNU Lesser General Public License as published by
+** the Free Software Foundation; either version 2.1 of the License, or
+** (at your option) any later version.
+**
+** This program is distributed in the hope that it will be useful,
+** but WITHOUT ANY WARRANTY; without even the implied warranty of
+** MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+** GNU Lesser General Public License for more details.
+**
+** You should have received a copy of the GNU Lesser General Public License
+** along with this program; if not, write to the Free Software
+** Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+*/
+
+SOURCE FILE: src/wavlike.c
+/*
+** Copyright (C) 1999-2020 Erik de Castro Lopo <erikd@mega-nerd.com>
+** Copyright (C) 2004-2005 David Viens <davidv@plogue.com>
+**
+** This program is free software; you can redistribute it and/or modify
+** it under the terms of the GNU Lesser General Public License as published by
+** the Free Software Foundation; either version 2.1 of the License, or
+** (at your option) any later version.
+**
+** This program is distributed in the hope that it will be useful,
+** but WITHOUT ANY WARRANTY; without even the implied warranty of
+** MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+** GNU Lesser General Public License for more details.
+**
+** You should have received a copy of the GNU Lesser General Public License
+** along with this program; if not, write to the Free Software
+** Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+*/
+
+SOURCE FILE: src/windows.c
+/*
+** Copyright (C) 2009-2017 Erik de Castro Lopo <erikd@mega-nerd.com>
+**
+** This program is free software; you can redistribute it and/or modify
+** it under the terms of the GNU Lesser General Public License as published by
+** the Free Software Foundation; either version 2.1 of the License, or
+** (at your option) any later version.
+**
+** This program is distributed in the hope that it will be useful,
+** but WITHOUT ANY WARRANTY; without even the implied warranty of
+** MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+** GNU Lesser General Public License for more details.
+**
+** You should have received a copy of the GNU Lesser General Public License
+** along with this program; if not, write to the Free Software
+** Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+*/
+/*
+**	This needs to be a separate file so that we don't have to include
+**	<windows.h> elsewhere (too many symbol clashes).
+*/
+
+SOURCE FILE: src/wve.c
+/*
+** Copyright (C) 2002-2017 Erik de Castro Lopo <erikd@mega-nerd.com>
+** Copyright (C) 2007 Reuben Thomas
+**
+** This program is free software; you can redistribute it and/or modify
+** it under the terms of the GNU Lesser General Public License as published by
+** the Free Software Foundation; either version 2.1 of the License, or
+** (at your option) any later version.
+**
+** This program is distributed in the hope that it will be useful,
+** but WITHOUT ANY WARRANTY; without even the implied warranty of
+** MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+** GNU Lesser General Public License for more details.
+**
+** You should have received a copy of the GNU Lesser General Public License
+** along with this program; if not, write to the Free Software
+** Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+*/
+
+SOURCE FILE: src/xi.c
+/*
+** Copyright (C) 2003-2017 Erik de Castro Lopo <erikd@mega-nerd.com>
+**
+** This program is free software; you can redistribute it and/or modify
+** it under the terms of the GNU Lesser General Public License as published by
+** the Free Software Foundation; either version 2.1 of the License, or
+** (at your option) any later version.
+**
+** This program is distributed in the hope that it will be useful,
+** but WITHOUT ANY WARRANTY; without even the implied warranty of
+** MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+** GNU Lesser General Public License for more details.
+**
+** You should have received a copy of the GNU Lesser General Public License
+** along with this program; if not, write to the Free Software
+** Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+*/

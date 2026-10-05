@@ -1,6 +1,6 @@
 {
   "installer": "sayrift-Setup-0.2.0.exe",
-  "sha256": "c2d01f4554a62ce783d049333091e0b2a968646f996cb3f0699b08227877ab7e",
+  "sha256": "ca18fb7ba9550b560d696c035bc12a4e665dd2ca547110e7e4e9049a8e6af2a3",
   "setup_native": [
     {
       "file": "_internal/_bz2.pyd",
@@ -90,6 +90,23 @@
       ]
     },
     {
+      "file": "_internal/_ssl.pyd",
+      "sha256": "72bb15cd8c14ba008a52d23cdcfc851a9a4bde13deee302a5667c8ad60f94a57",
+      "machine": "0x8664",
+      "imports": [
+        "WS2_32.dll",
+        "CRYPT32.dll",
+        "libcrypto-3.dll",
+        "libssl-3.dll",
+        "KERNEL32.dll",
+        "python312.dll",
+        "VCRUNTIME140.dll",
+        "api-ms-win-crt-stdio-l1-1-0.dll",
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "api-ms-win-crt-string-l1-1-0.dll"
+      ]
+    },
+    {
       "file": "_internal/libcrypto-3.dll",
       "sha256": "05fe080eab7fc535c51e10c1bd76a2f3e6217f9c91a25034774588881c3f99de",
       "machine": "0x8664",
@@ -119,6 +136,23 @@
         "KERNEL32.dll",
         "VCRUNTIME140.dll",
         "api-ms-win-crt-runtime-l1-1-0.dll"
+      ]
+    },
+    {
+      "file": "_internal/libssl-3.dll",
+      "sha256": "2e9fbcd8f7fdc13a5179533239811456554f2b3aa2fb10e1b17be0df81c79006",
+      "machine": "0x8664",
+      "imports": [
+        "libcrypto-3.dll",
+        "KERNEL32.dll",
+        "VCRUNTIME140.dll",
+        "api-ms-win-crt-time-l1-1-0.dll",
+        "api-ms-win-crt-string-l1-1-0.dll",
+        "api-ms-win-crt-utility-l1-1-0.dll",
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "api-ms-win-crt-filesystem-l1-1-0.dll",
+        "api-ms-win-crt-convert-l1-1-0.dll",
+        "api-ms-win-crt-stdio-l1-1-0.dll"
       ]
     },
     {
@@ -928,7 +962,7 @@
     },
     {
       "file": "SayriftSetup.exe",
-      "sha256": "92762ede15927f6522a85946e7df46f813c170225c18fda2cbfe4d4fe27dd89b",
+      "sha256": "2746955207e7970beb8c985a30aae348fe08ddcb7bc3539a8931ca9909b14df6",
       "machine": "0x8664",
       "imports": [
         "USER32.dll",
@@ -1116,22 +1150,22 @@
     },
     {
       "file": "_internal/_soundfile_data/libsndfile_x64.dll",
-      "sha256": "22518c16f9d13eda5ae5adf999c4740d7d16cc2d6b178b36dd4ac2f759a38559",
+      "sha256": "e4ba1dacb86dc6bfe9a47119d616c795e049c06bf906d16402f45def56aa4f7e",
       "machine": "0x8664",
       "imports": [
-        "SHLWAPI.dll",
         "KERNEL32.dll",
-        "VCRUNTIME140.dll",
+        "api-ms-win-crt-stdio-l1-1-0.dll",
+        "api-ms-win-crt-runtime-l1-1-0.dll",
         "api-ms-win-crt-string-l1-1-0.dll",
         "api-ms-win-crt-time-l1-1-0.dll",
-        "api-ms-win-crt-stdio-l1-1-0.dll",
         "api-ms-win-crt-heap-l1-1-0.dll",
-        "api-ms-win-crt-environment-l1-1-0.dll",
-        "api-ms-win-crt-runtime-l1-1-0.dll",
         "api-ms-win-crt-math-l1-1-0.dll",
+        "api-ms-win-crt-environment-l1-1-0.dll",
+        "api-ms-win-crt-private-l1-1-0.dll",
         "api-ms-win-crt-filesystem-l1-1-0.dll",
         "api-ms-win-crt-convert-l1-1-0.dll",
-        "api-ms-win-crt-utility-l1-1-0.dll"
+        "api-ms-win-crt-utility-l1-1-0.dll",
+        "api-ms-win-crt-locale-l1-1-0.dll"
       ]
     },
     {
@@ -2305,7 +2339,7 @@
     },
     {
       "file": "sayrift.exe",
-      "sha256": "7119b12a4b5bdb3738fe8b6d798c0bc55d91c50baf302d88d1d43f1c5a30e8fc",
+      "sha256": "6178fdc9b388c06025e4eaa297cf7378d6cce6baa8a29a4c717673f16c6c9d46",
       "machine": "0x8664",
       "imports": [
         "USER32.dll",
@@ -2316,6 +2350,7 @@
       ]
     }
   ],
+  "rebuilt_audio_sha256": "e4ba1dacb86dc6bfe9a47119d616c795e049c06bf906d16402f45def56aa4f7e",
   "app_original": {
     "qt": "6.11.2",
     "binding": "_internal/PySide6/QtCore.pyd",
@@ -2326,7 +2361,39 @@
     "portaudio": [
       1246976,
       "PortAudio V19.7.0-devel, revision unknown"
-    ]
+    ],
+    "audio_formats": [
+      "AIFF",
+      "AU",
+      "AVR",
+      "CAF",
+      "HTK",
+      "IRCAM",
+      "MAT4",
+      "MAT5",
+      "MPC2K",
+      "NIST",
+      "OGG",
+      "PAF",
+      "PVF",
+      "RAW",
+      "RF64",
+      "SD2",
+      "SDS",
+      "SVX",
+      "VOC",
+      "W64",
+      "WAV",
+      "WAVEX",
+      "WVE",
+      "XI"
+    ],
+    "ogg_subtypes": [
+      "OPUS"
+    ],
+    "openssl": "OpenSSL 3.0.13 30 Jan 2024",
+    "ca_count": 121,
+    "pcm_roundtrip": true
   },
   "app_modified": {
     "qt": "6.11.9",
@@ -2338,7 +2405,39 @@
     "portaudio": [
       1246976,
       "PortAudio V19.7.0-devel, revision unknown"
-    ]
+    ],
+    "audio_formats": [
+      "AIFF",
+      "AU",
+      "AVR",
+      "CAF",
+      "HTK",
+      "IRCAM",
+      "MAT4",
+      "MAT5",
+      "MPC2K",
+      "NIST",
+      "OGG",
+      "PAF",
+      "PVF",
+      "RAW",
+      "RF64",
+      "SD2",
+      "SDS",
+      "SVX",
+      "VOC",
+      "W64",
+      "WAV",
+      "WAVEX",
+      "WVE",
+      "XI"
+    ],
+    "ogg_subtypes": [
+      "OPUS"
+    ],
+    "openssl": "OpenSSL 3.0.13 30 Jan 2024",
+    "ca_count": 121,
+    "pcm_roundtrip": true
   },
   "payload_install_and_upgrade": "passed; isolated folder, no registry or shortcuts",
   "outer_archive_contains_qt": false

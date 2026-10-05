@@ -17,6 +17,7 @@ import zipfile
 from pathlib import Path
 
 from bundle_notices import collect
+from windows_audio_artifact import verified_audio
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "src"))
@@ -74,6 +75,16 @@ def prepare_folder(folder: Path) -> None:
         for filename in ("direct_url.json", "uv_build.json", "uv_cache.json", "RECORD"):
             (metadata / filename).unlink(missing_ok=True)
     collect(folder / "licenses", ROOT)
+    audio = folder / "_internal/_soundfile_data/libsndfile_x64.dll"
+    if audio.is_file():
+        replacement = verified_audio()
+        shutil.copy2(replacement, audio)
+        shutil.copytree(
+            replacement.parent,
+            folder / "licenses/audio-build",
+            dirs_exist_ok=True,
+            ignore=shutil.ignore_patterns("*.dll"),
+        )
     shutil.copy2(ROOT / "docs" / "windows-library-replacement.md", folder / "licenses" / "LIBRARY-REPLACEMENT.md")
 
 
@@ -85,6 +96,11 @@ def archive_folder(folder: Path, output: Path) -> None:
 
 
 def main() -> int:
+    try:
+        verified_audio()
+    except (ValueError, OSError, KeyError):
+        subprocess.run([sys.executable, str(ROOT / "tools/build_windows_audio.py")], check=True, cwd=ROOT)
+        verified_audio()
     BUILD.mkdir(exist_ok=True)
     if APP.resolve().parent != DIST.resolve() or APP.is_symlink() or APP.is_junction():
         raise ValueError("Build output must stay inside this checkout's dist directory")

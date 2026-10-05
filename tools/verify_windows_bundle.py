@@ -68,9 +68,21 @@ def verify(installer: Path, output: Path) -> None:
         replace_payload(app, payload, lambda _: None)
         assert (app / "licenses" / "LIBRARY-REPLACEMENT.md").is_file()
         report["app_native"] = native_inventory(app)
+        audio_build = json.loads((app / "licenses/audio-build/build-report.json").read_text(encoding="utf-8"))
+        audio_path = "_internal/_soundfile_data/libsndfile_x64.dll"
+        audio_pe = next(entry for entry in report["app_native"] if entry["file"] == audio_path)
+        assert audio_pe["sha256"] == audio_build["dll_sha256"]
+        assert all(
+            name.lower() == "kernel32.dll" or name.lower().startswith("api-ms-win-crt-") for name in audio_pe["imports"]
+        )
+        report["rebuilt_audio_sha256"] = audio_pe["sha256"]
         assert not any("asio" in x["file"].lower() or "opengl32sw" in x["file"].lower() for x in report["app_native"])
         assert all(x["machine"] == "0x8664" for x in report["app_native"])
         report["app_original"] = probe(app / "sayrift.exe", root / "app-original.json")
+        assert report["app_original"]["ca_count"] > 0
+        assert report["app_original"]["pcm_roundtrip"]
+        assert report["app_original"]["ogg_subtypes"] == ["OPUS"]
+        assert not {"FLAC", "MP3"}.intersection(report["app_original"]["audio_formats"])
         patch_version(app / "_internal/PySide6/Qt6Core.dll", b"6.11.2\0", b"6.11.9\0")
         patch_version(app / "_internal/_soundfile_data/libsndfile_x64.dll", b"libsndfile-1.2.2", b"libsndfile-1.2.9")
         report["app_modified"] = probe(app / "sayrift.exe", root / "app-modified.json")

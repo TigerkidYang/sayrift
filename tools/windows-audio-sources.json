@@ -1,0 +1,26 @@
+[
+  {
+    "file": "opus-v1.5.2.tar.gz",
+    "url": "https://github.com/xiph/opus/archive/refs/tags/v1.5.2.tar.gz",
+    "bytes": 4183352,
+    "sha256": "9480e329e989f70d69886ded470c7f8cfe6c0667cc4196d4837ac9e668fb7404"
+  },
+  {
+    "file": "ogg-v1.3.5.tar.gz",
+    "url": "https://github.com/xiph/ogg/archive/refs/tags/v1.3.5.tar.gz",
+    "bytes": 251765,
+    "sha256": "f6f1b04cfa4e98b70ffe775d5e302d9c6b98541f05159af6de2d6617817ed7d6"
+  },
+  {
+    "file": "libsndfile-1.2.2.tar.xz",
+    "url": "https://github.com/libsndfile/libsndfile/releases/download/1.2.2/libsndfile-1.2.2.tar.xz",
+    "bytes": 730760,
+    "sha256": "3799ca9924d3125038880367bf1468e53a1b7e3686a934f098b7e1d286cdb80e"
+  },
+  {
+    "file": "llvm-mingw-20260922-ucrt-x86_64.zip",
+    "url": "https://github.com/mstorsjo/llvm-mingw/releases/download/20260922/llvm-mingw-20260922-ucrt-x86_64.zip",
+    "bytes": 190725905,
+    "sha256": "e3ad77d117a4bea19a7a3b333341824d79a5a371004a10e25b8504e7b3047666"
+  }
+]

@@ -47,3 +47,8 @@ Qt 源码归档提供 `configure.bat`、CMake 构建脚本及第三方源代码�
 安装该版本要求的 CMake/Ninja/Windows SDK。PySide 源码的 `README.md`、`setup.py` 和 `build_scripts/`
 提供绑定构建方法；使 `--qtpaths` 指向所构建 Qt 的 `bin/qtpaths.exe`，使用 CPython 3.12 和对应 LLVM/Clang。
 库源码不包含 Sayrift 修改。版本相同不等于已证明 wheel 的准确构建来源；核验报告明确区分两者。
+
+
+本发行版的 libsndfile 来自固定源码重建，只有 Ogg/Opus 外部编解码器；MP3、FLAC、Vorbis
+不可用。原始源码、带日期的修改、准确编译器摘要与重建命令见 `windows-audio-build.md`
+及发行附件 `sayrift-windows-audio-source.zip`。可自行修改并重建兼容 DLL，再按上述路径替换。

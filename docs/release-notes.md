@@ -1,35 +1,34 @@
-# Sayrift 0.2.0 — source preview
+# Sayrift 0.2.1
 
-Sayrift is a voice dictation, translation and voice-editing app for Windows and Android.
-This first public release contains source code under the [MIT license](../LICENSE).
-Third-party works retain their own licenses; see [THIRD_PARTY_NOTICES.md](../THIRD_PARTY_NOTICES.md).
+Download the [Windows installer or Android APK](https://github.com/TigerkidYang/sayrift/releases/tag/v0.2.1). This is the first downloadable release; 0.2.0 was a source-only preview.
 
-## Scope
+## Included
 
-- Windows: Glass interface, global shortcuts, local history and optional audio retry, dictionary, usage and costs.
-- Android: edge handle alongside your existing keyboard, three voice modes, text history, dictionary and setup guidance.
-- Own OpenRouter key; no account, subscription, offline inference or device sync.
-- The layered hotword-library experiment is not included.
+- Windows: global shortcuts for dictation, translation and Ask; Glass interface, voice bar, local history with optional audio retry, dictionary, usage and cost views.
+- Android: an edge handle alongside your existing keyboard, the same three voice modes, text history, dictionary and setup guidance.
+- Your own OpenRouter key. Audio and relevant text/context go to OpenRouter and its selected providers; usage is billed to your account. No offline inference, device sync or account subscription.
+- Local-history retention and request-cancellation fixes from the reviewed source preview.
 
-The public repository starts from a reviewed source snapshot. Earlier private development history,
-personal research, local paths and generated speech fixtures are not published. Evaluation text and
-offline unit tests remain available. See [evaluation instructions](../evals/README.md) to use your own recordings.
+The layered hotword experiment is not included.
 
-## Building and distribution
+## Installation and updates
 
-Windows and Android debug build instructions are in the READMEs. These are developer builds.
-No official EXE or APK is attached to this source preview. Before distributing binaries, complete the
-corresponding-source, dependency-notice and library-replacement checklist in the third-party notices.
-Android release builds require explicit signing credentials; see [signing](../android/signing.md).
-Keep signing keys outside Git. Debug and production certificates are different upgrade identities.
+Windows installation is per user and does not require Python. The EXE is currently **unsigned** and may show a Windows reputation warning. The old local data directory is retained.
 
-## Limits
+The Android APK is an optimized, non-debug release signed with Sayrift's public release identity. Its certificate fingerprint and verification instructions are in [Android signing](../android/signing.md). This certificate differs from earlier personal debug builds, so it cannot directly update those installations. **Do not uninstall an old build to bypass a signature mismatch if you need its data.**
 
-- Preview software: app-specific insertion and accessibility behavior need broader device testing.
-- Windows 11 is the desktop target. Android 10+ is declared; Android 13+ has better input integration.
-- Android clipboard fallback is subject to system restrictions; no physical secure-erasure guarantee is made.
-- Costs may be incurred before a cancelled request reaches its provider; local cancellation cannot undo billing.
-- History is local plaintext SQLite storage. Provider privacy filtering is not a blanket zero-retention guarantee.
-- Source publication is not a claim that every earlier private test or experimental feature is reproducible here.
+The download page includes SHA-256 checksums and dependency source materials. Windows libraries and the graphical setup can be replaced independently; see [library replacement](windows-library-replacement.md). Sayrift is MIT-licensed; third-party components retain their own licenses.
 
-Report issues using non-sensitive sample text. See [security and privacy](../SECURITY.md).
+## Verification and limits
+
+Release builds are checked with offline unit tests, packaging inspection and Android signature verification. See [binary build evidence](binary-release.md) for the precise results. These checks do not replace device tests of microphone access, input fields, accessibility or upgrades.
+
+Windows 11 is the desktop target. Android 10+ is declared, with better input integration on Android 13+. The Android UI is primarily Chinese. Some applications may reject insertion; recover the text from the result card.
+
+History uses local plaintext SQLite storage. Database deletion does not guarantee physical secure erasure. Provider privacy routing is not a zero-retention guarantee, and cancellation cannot undo a provider charge already incurred.
+
+Report problems with non-sensitive sample data; use [private vulnerability reporting](https://github.com/TigerkidYang/sayrift/security/advisories/new) for security findings.
+
+## Earlier release
+
+[0.2.0](https://github.com/TigerkidYang/sayrift/releases/tag/v0.2.0) remains available as the initial reviewed MIT source snapshot, without binaries. Private development history, personal research, local configuration and generated speech fixtures are not part of the public repository.

@@ -16,7 +16,7 @@ libsndfile（LGPLv2.1）。完整许可位于 `licenses/`。Sayrift 不限制用
 安装程序也可替换库。在 PowerShell 中运行并等待结束：
 
 ```powershell
-Start-Process -Wait -FilePath .\sayrift-Setup-0.2.0.exe -ArgumentList '--extract-to', 'C:/Temp/SayriftSetup'
+Start-Process -Wait -FilePath .\sayrift-Setup-0.2.1.exe -ArgumentList '--extract-to', 'C:/Temp/SayriftSetup'
 ```
 
 目标目录必须尚不存在。此操作仅解包，不安装、不修改注册表、不退出正在运行的程序。

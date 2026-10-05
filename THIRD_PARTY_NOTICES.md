@@ -1,11 +1,15 @@
 # Sayrift 第三方软件与素材告知
 
-核验日期：2026-10-05。依赖声明与代码证据以 `ede097e` 为基线；Windows 版本同时核对了
-`uv.lock`、本机安装包元数据及本机已有的 Windows 分发目录。Android 仅核对 Gradle 声明、
-Google Maven 的 BOM/POM 和上游许可，**尚未核验最终 APK 的完整依赖与素材清单**。
+核验日期：2026-10-06。Sayrift 自有代码采用 [MIT](LICENSE)，第三方作品保留各自许可证。
 
-本文件记录第三方来源和待完成的分发工作，不是二进制发布合规证明。Sayrift 自有代码采用 [MIT](LICENSE)。首次仅公开源码，不附带 EXE/APK。
-`licenses/` 下的许可只适用于对应第三方作品，不是 Sayrift 整体的许可证。
+0.2.1 提供 Windows 安装包和 Android APK。安装器、应用目录与 APK 内包含适用的许可和告知；
+发布页同时提供配套告知及 Windows 依赖源码下载。最终制品的检查范围见
+[二进制发布记录](docs/binary-release.md)、[Windows 核验](docs/windows-binary-evidence.md)和
+[Android 运行时告知](android/runtime-notices.md)。本文件保留初次源码审查的来源说明，
+其中“旧分发包”“审计基线”的观察不代表 0.2.1 仍包含那些已排除的组件。
+
+`licenses/` 下的许可适用于对应第三方作品，不是 Sayrift 整体的许可证。此处记录材料与验证证据，
+不作对任意未来构建的合规保证。更新依赖、打包方式或原生库后应重新核验实际制品。
 
 ## 1. Windows 依赖清单
 
@@ -55,7 +59,7 @@ Google Maven 的 BOM/POM 和上游许可，**尚未核验最终 APK 的完整依
 随本仓库保留：
 
 - [Lucide 的完整复合许可](licenses/Lucide-ISC-Feather-MIT.txt)：上游修订
-  `e715245d62667c800e7f54c94b1b023692e900a3` 的原始 `LICENSE`，包含 Lucide ISC 以及上游列明的
+  `e715345d62667c800e7f54c94b1b023692e900a3` 的原始 `LICENSE`，包含 Lucide ISC 以及上游列明的
   Feather 派生图标 MIT 文本、版权人和适用图标列表。
 - [Feather 的独立 MIT 许可](licenses/Feather-MIT.txt)：保留 Cole Bemis 的完整版权与许可告知，
   包括直接采用 Feather 图形时需要保留的文本；来源修订见 [licenses/README.md](licenses/README.md)。
@@ -64,7 +68,7 @@ Google Maven 的 BOM/POM 和上游许可，**尚未核验最终 APK 的完整依
 发行源码与二进制都应带上这些文本。官方解释见 [Lucide license](https://lucide.dev/license)。
 这些文本不为 Sayrift 自制光球标识授予新的许可，也不代表 Lucide、Feather 或其作者认可 Sayrift。
 
-## 3. Qt / PySide6 / Shiboken：文本已补充，二进制义务仍待完成
+## 3. Qt / PySide6 / Shiboken
 
 **实测缺口：**本机 `pyside6_essentials-6.11.2.dist-info/METADATA` 与
 `shiboken6-6.11.2.dist-info/METADATA` 声明 LGPL-3.0-only / GPL-2.0-only / GPL-3.0-only 三选一，
@@ -77,7 +81,7 @@ Google Maven 的 BOM/POM 和上游许可，**尚未核验最终 APK 的完整依
 LGPLv3 纳入 GPLv3 的条款，因而两份文本一起提供；这不为 Sayrift 自有代码选择 GPL。
 这些通用文本也不能替代每个组件自己的版权、例外及第三方材料。
 
-公开分发 Qt/PySide6/Shiboken 二进制前，发布负责人还需完成并记录：
+0.2.1 的核验按以下项目进行，实际构建与库替换证据见 [Windows 核验记录](docs/windows-binary-evidence.md)：
 
 1. 明确所依赖的许可路径；若使用 LGPL，提供显著使用告知、完整许可文本，并保留相关版权/告知。
 2. 记录**实际 DLL、插件及绑定的对应源码**：准确版本、构建来源、所用修改及必要构建材料，
@@ -94,8 +98,8 @@ LGPLv3 纳入 GPLv3 的条款，因而两份文本一起提供；这不为 Sayri
 - [Qt 官方 LGPL 义务说明](https://www.qt.io/development/open-source-lgpl-obligations)。
 - [Qt 第三方许可索引](https://doc.qt.io/qt-6/licenses-used-in-qt.html)。
 
-上述归档是核对起点；本次未下载完整源码并确认其与发布二进制构建逐项对应，也未验证库替换。
-因此**本次告知补充不解除 Qt 二进制发布前的对应源码与替换验证待办**。
+0.2.1 已保存固定哈希的 Qt/PySide 完整版本源码，并验证应用和图形安装器实际加载修改后的库。
+替换和重建方法见 [Windows 库替换](docs/windows-library-replacement.md)，准确源文件 URL 与摘要见 `tools/windows-sources.json`。
 
 ## 4. soundfile、原生音频库及其他二进制
 
@@ -124,7 +128,7 @@ DLL 的源码交付/获取安排、修改记录及适用的库替换要求需按
 
 以下依据 `android/build.gradle.kts`、`android/app/build.gradle.kts`、`android/core/build.gradle.kts`，
 并核对 Google Maven 的 [Compose BOM 2024.12.01 原始 POM](https://dl.google.com/dl/android/maven2/androidx/compose/compose-bom/2024.12.01/compose-bom-2024.12.01.pom)。
-这是直接声明/版本约束，不是最终 APK 的完整 resolved dependency report。
+以下表格是直接声明/版本约束；最终解析的 60 个运行时制品及哈希另见 `android/notices/manifest.json`。
 
 | 组件 | 声明/约束版本 | 类型与许可来源 |
 |---|---|---|
@@ -148,7 +152,7 @@ DLL 的源码交付/获取安排、修改记录及适用的库替换要求需按
 审计基线的 `android/app/build.gradle.kts` 排除了 `/META-INF/{AL2.0,LGPL2.1}`。
 这条打包规则并不自动证明违规，也不证明义务消失；若资源被排除，应确认其适用文本在另一可获得位置完整提供。
 整合分支已将此规则改为合并保留根目录和 META-INF 中的许可 / NOTICE 资源，并通过 AGP 配置检查；
-本次未用最终 APK 验证这一点，仍需核验实际打包结果与随应用提供的告知。
+0.2.1 另将完整告知打入 `assets/third_party/`，最终签名 APK 的 153 个告知文件与配套 ZIP 已逐字节核对。
 
 ## 6. 图像、声音与评测数据来源
 
@@ -162,15 +166,15 @@ DLL 的源码交付/获取安排、修改记录及适用的库替换要求需按
   这是一项未解决的来源问题，不是已认定侵权。参见 [Microsoft 版权资源](https://www.microsoft.com/en-us/legal/intellectualproperty/copyright)。
 - 录音是否进入应用安装包与录音是否随 Git 仓库公开，是两个独立检查点。只从 EXE 排除不能解决源码分发的来源问题。
 
-## 7. 本次交付与发布前待核验项
+## 7. 版本核验要求
 
 本次交付是这份清单及 `licenses/` 的固定来源许可原文。具体文件来源、修订、字节数和 SHA-256
 见 [licenses/README.md](licenses/README.md)。
 
-- [ ] 最终 EXE/APK 与安装程序包含其适用的完整许可、版权及通知，wheel 自动提取结果已与制品核对。
-- [ ] PySide6/Shiboken wheel 缺少开源许可文本的问题已由构建明确补齐；不能仅检查“存在一个 license 文件”。
-- [ ] Qt/PySide6/Shiboken 与 libsndfile 的准确对应源码、修改/构建来源、获取安排和库替换路径已落实并验证。
-- [ ] PortAudio/ASIO、Qt 原生附带组件、音频编解码器、解释器/平台运行库及字体等实际制品清单已完成。
-- [ ] Android 最终解析依赖、AAR/JAR NOTICE 及被排除许可资源的替代分发位置已核验。
+- 最终 EXE/APK 与安装程序包含其适用的许可、版权及通知；具体材料和核验结果见各平台报告。
+- PySide6/Shiboken wheel 缺少的开源许可文本由构建明确补齐。
+- Qt/PySide6/Shiboken 与实际发布的音频库提供对应版本源码、构建材料和库替换说明。
+- Windows 原生制品清单保留相对路径、摘要、架构与导入表；ASIO 和不需要的可选 DLL 不分发。
+- Android 解析依赖、AAR/JAR NOTICE 与补充材料固定摘要，并在 APK 和配套 ZIP 提供。
 - [x] 首次公开快照排除 Edge TTS 评测录音；保留文本用例和使用自有录音的说明。
 - [x] Sayrift 自有代码与原创资源采用 MIT；本目录的第三方作品保留原许可。

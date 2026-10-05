@@ -1,6 +1,6 @@
 {
-  "installer": "sayrift-Setup-0.2.0.exe",
-  "sha256": "ca18fb7ba9550b560d696c035bc12a4e665dd2ca547110e7e4e9049a8e6af2a3",
+  "installer": "sayrift-Setup-0.2.1.exe",
+  "sha256": "4cb8396f53ee0849cb3dd6ca792181667d24d35b201f327e2e3ed77dda838a41",
   "setup_native": [
     {
       "file": "_internal/_bz2.pyd",
@@ -962,7 +962,7 @@
     },
     {
       "file": "SayriftSetup.exe",
-      "sha256": "2746955207e7970beb8c985a30aae348fe08ddcb7bc3539a8931ca9909b14df6",
+      "sha256": "a86f46ff8d166087fd72c7f3c91a6141c3d72f634bc494b6e2cc59b79d9b7b37",
       "machine": "0x8664",
       "imports": [
         "USER32.dll",
@@ -2339,7 +2339,7 @@
     },
     {
       "file": "sayrift.exe",
-      "sha256": "6178fdc9b388c06025e4eaa297cf7378d6cce6baa8a29a4c717673f16c6c9d46",
+      "sha256": "fafba4db51e92ebbf0d45cc2605df8ef00de471a258589232e558a687c630150",
       "machine": "0x8664",
       "imports": [
         "USER32.dll",
@@ -2439,6 +2439,5 @@
     "ca_count": 121,
     "pcm_roundtrip": true
   },
-  "payload_install_and_upgrade": "passed; isolated folder, no registry or shortcuts",
-  "outer_archive_contains_qt": false
+  "payload_install_and_upgrade": "passed; isolated folder, no registry or shortcuts"
 }

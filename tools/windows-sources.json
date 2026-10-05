@@ -1,0 +1,116 @@
+[
+  {
+    "file": "qtbase-everywhere-src-6.11.2.tar.xz",
+    "url": "https://download.qt.io/archive/qt/6.11/6.11.2/submodules/qtbase-everywhere-src-6.11.2.tar.xz",
+    "bytes": 50582668,
+    "sha256": "5b2e00eccaf5a4d8c14134ffa0ea8dfd0a35ae1ffc7f8d87fa4305a1ed23cf22"
+  },
+  {
+    "file": "qtsvg-everywhere-src-6.11.2.tar.xz",
+    "url": "https://download.qt.io/archive/qt/6.11/6.11.2/submodules/qtsvg-everywhere-src-6.11.2.tar.xz",
+    "bytes": 2341860,
+    "sha256": "d594337feca84c26fb67fe87b85e6a5c12fda404b611d905f9d138210c311876"
+  },
+  {
+    "file": "qtimageformats-everywhere-src-6.11.2.tar.xz",
+    "url": "https://download.qt.io/archive/qt/6.11/6.11.2/submodules/qtimageformats-everywhere-src-6.11.2.tar.xz",
+    "bytes": 2050424,
+    "sha256": "cecd8900f34b6550076309bc94f62f828008b633a4239e0a08c86788f41001f8"
+  },
+  {
+    "file": "opus-v1.5.2.tar.gz",
+    "url": "https://github.com/xiph/opus/archive/refs/tags/v1.5.2.tar.gz",
+    "bytes": 4183352,
+    "sha256": "9480e329e989f70d69886ded470c7f8cfe6c0667cc4196d4837ac9e668fb7404"
+  },
+  {
+    "file": "flac-1.4.3.tar.gz",
+    "url": "https://github.com/xiph/flac/archive/refs/tags/1.4.3.tar.gz",
+    "bytes": 914427,
+    "sha256": "0a4bb82a30609b606650d538a804a7b40205366ce8fc98871b0ecf3fbb0611ee"
+  },
+  {
+    "file": "ogg-v1.3.5.tar.gz",
+    "url": "https://github.com/xiph/ogg/archive/refs/tags/v1.3.5.tar.gz",
+    "bytes": 251765,
+    "sha256": "f6f1b04cfa4e98b70ffe775d5e302d9c6b98541f05159af6de2d6617817ed7d6"
+  },
+  {
+    "file": "vorbis-v1.3.7.tar.gz",
+    "url": "https://github.com/xiph/vorbis/archive/refs/tags/v1.3.7.tar.gz",
+    "bytes": 1234573,
+    "sha256": "270c76933d0934e42c5ee0a54a36280e2d87af1de3cc3e584806357e237afd13"
+  },
+  {
+    "file": "libsndfile-binaries-1ac5f941.zip",
+    "url": "https://github.com/bastibe/libsndfile-binaries/archive/1ac5f9412cedaac97667bf5f2c7d4d4fea91999e.zip",
+    "sha256": "1eb8e894ae0ec2f217c4613fe573be1d9247a2d4e220baf9693aa3a23983be11",
+    "bytes": 6359429
+  },
+  {
+    "file": "vcpkg-2024.12.16.zip",
+    "url": "https://github.com/microsoft/vcpkg/archive/refs/tags/2024.12.16.zip",
+    "sha256": "2ab59e10bd843084a5f5f7e5e2f21bb582236f076112382911cfef5dd6078bca",
+    "bytes": 8624220
+  },
+  {
+    "file": "lame-3.100.tar.gz",
+    "url": "https://downloads.sourceforge.net/project/lame/lame/3.100/lame-3.100.tar.gz",
+    "sha256": "ddfe36cab873794038ae2c1210557ad34857a4b6bdc515785d1da9e175b1da1e",
+    "bytes": 1524133
+  },
+  {
+    "file": "mpg123-1.32.9.tar.bz2",
+    "url": "https://www.mpg123.de/download/mpg123-1.32.9.tar.bz2",
+    "sha256": "03b61e4004e960bacf2acdada03ed94d376e6aab27a601447bd4908d8407b291",
+    "bytes": 1118388
+  },
+  {
+    "file": "PortAudio-LICENSE.txt",
+    "url": "https://raw.githubusercontent.com/PortAudio/portaudio/v19.7.0/LICENSE.txt",
+    "sha256": "ec52a1952d701f94e5135719a47376da4ee0b4a0201f1cafb49f61db6480ac3d",
+    "bytes": 3524
+  },
+  {
+    "file": "soundfile-native-notices.md",
+    "url": "https://raw.githubusercontent.com/bastibe/python-soundfile/0.14.0/licensing/license_notes.md",
+    "sha256": "35630e1f59b5c54b0bcbe2ec173bcf5a63b727a6e2f7834ca6d35a1af91a2b5f",
+    "bytes": 2631
+  },
+  {
+    "file": "certifi-2026.7.22.tar.gz",
+    "url": "https://files.pythonhosted.org/packages/a3/c2/24167ea9858356b47a87a50d39908bfdb72ceeefe0041586e704e5376b3a/certifi-2026.7.22.tar.gz",
+    "sha256": "741e2c3b351ddf169a738da9f2c048608ff7f2c5cc02f1ebc6b118bb090d5d55",
+    "bytes": 138112
+  },
+  {
+    "file": "qt-everywhere-src-6.11.2.tar.xz",
+    "url": "https://download.qt.io/archive/qt/6.11/6.11.2/single/qt-everywhere-src-6.11.2.tar.xz",
+    "bytes": 1019661552,
+    "sha256": "6dcfbca271d76a6502741a2c0dc6fc98ef7dd0b7b4cfd0abcebb285a86a26f33"
+  },
+  {
+    "file": "pyside-setup-everywhere-src-6.11.2.tar.xz",
+    "url": "https://download.qt.io/official_releases/QtForPython/pyside6/PySide6-6.11.2-src/pyside-setup-everywhere-src-6.11.2.tar.xz",
+    "bytes": 18053248,
+    "sha256": "cba47efbaad1bedd529725cbc14e21f156c7a19366f07b3edfbb076ffd7afdf8"
+  },
+  {
+    "file": "libsndfile-1.2.2.tar.xz",
+    "url": "https://github.com/libsndfile/libsndfile/releases/download/1.2.2/libsndfile-1.2.2.tar.xz",
+    "bytes": 730760,
+    "sha256": "3799ca9924d3125038880367bf1468e53a1b7e3686a934f098b7e1d286cdb80e"
+  },
+  {
+    "file": "Python-3.12.2.tar.xz",
+    "url": "https://www.python.org/ftp/python/3.12.2/Python-3.12.2.tar.xz",
+    "bytes": 20591308,
+    "sha256": "be28112dac813d2053545c14bf13a16401a21877f1a69eb6ea5d84c4a0f3d870"
+  },
+  {
+    "file": "certifi-2026.7.22.tar.gz",
+    "url": "https://files.pythonhosted.org/packages/a3/c2/24167ea9858356b47a87a50d39908bfdb72ceeefe0041586e704e5376b3a/certifi-2026.7.22.tar.gz",
+    "sha256": "741e2c3b351ddf169a738da9f2c048608ff7f2c5cc02f1ebc6b118bb090d5d55",
+    "bytes": 138112
+  }
+]

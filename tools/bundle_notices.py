@@ -54,6 +54,10 @@ def collect(destination: Path, root: Path) -> None:
         shutil.copy2(project_license, destination / "Sayrift-LICENSE.txt")
     if (root / "licenses").is_dir():
         shutil.copytree(root / "licenses", destination / "licenses", dirs_exist_ok=True)
+    # Native notices are checked in so ordinary installer/CI builds remain offline.
+    manifest = root / "tools" / "windows-sources.json"
+    if manifest.is_file():
+        shutil.copy2(manifest, destination / manifest.name)
 
 
 if __name__ == "__main__":

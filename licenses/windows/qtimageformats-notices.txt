@@ -1,0 +1,301 @@
+SOURCE FILE: qtimageformats-everywhere-src-6.11.2/LICENSES/LicenseRef-Qt-Commercial.txt
+Licensees holding valid commercial Qt licenses may use this software in
+accordance with the the terms contained in a written agreement between
+you and The Qt Company. Alternatively, the terms and conditions that were
+accepted by the licensee when buying and/or downloading the
+software do apply.
+
+For the latest licensing terms and conditions, see https://www.qt.io/terms-conditions.
+For further information use the contact form at https://www.qt.io/contact-us.
+
+
+SOURCE FILE: qtimageformats-everywhere-src-6.11.2/licenseRule.json
+[
+    {
+        "comment": ["file_pattern_ending: strings matched against the end of a file name.",
+                     "location keys: regular expression matched against the beginning of",
+                     "the file path (relative to the git submodule root).",
+                     "spdx: list of SPDX-License-Expression's allowed in the matching files.",
+                     "-------------------------------------------------------",
+                     "Files with the following endings are Build System licensed,",
+                     "unless they are examples",
+                     "Files with other endings can also be build system files"
+                     ],
+        "file_pattern_ending": ["CMakeLists.txt", ".cmake", ".pro", ".pri", ".prf",
+                     "configure", "configure.bat", "cmake.in", "plist.in", "CMakeLists.txt.in",
+                     ".cmake.conf", ".tag", "ci_config_linux.json",
+                     ".yaml"],
+        "location": {
+            "": {
+                "comment": "Default",
+                "file type": "build system",
+                "spdx": ["BSD-3-Clause"]
+            },
+            "(.*)(examples/|snippets/)": {
+                "comment": "Example takes precedence",
+                "file type": "examples and snippets",
+                "spdx": ["LicenseRef-Qt-Commercial OR BSD-3-Clause"]
+            }
+        }
+    },
+    {
+        "comments": ["Files with the following endings are infrastructure licensed"],
+        "file_pattern_ending": [".gitattributes", ".gitignore", ".gitmodules", ".gitreview",
+                                "_clang-format", "licenseRule.json", "REUSE.toml"],
+        "location":{
+            "": {
+                "comment": "Default",
+                "file type": "infrastructure",
+                "spdx": ["LicenseRef-Qt-Commercial OR BSD-3-Clause"]
+            }
+        }
+    },
+    {
+        "comments": ["Files with the following endings are Tool licensed,",
+                      "unless they are examples.",
+                      "Files with other endings can also be tool files."],
+        "file_pattern_ending": [".sh", ".py", ".pl", ".bat", ".ps1"],
+        "location":{
+            "": {
+                "comment": "Default",
+                "file type": "tools and utils",
+                "spdx": ["LicenseRef-Qt-Commercial OR GPL-3.0-only WITH Qt-GPL-exception-1.0"]
+            },
+            "(.*)(examples/|snippets/)": {
+                "comment": "Example takes precedence",
+                "file type": "examples and snippets",
+                "spdx": ["LicenseRef-Qt-Commercial OR BSD-3-Clause"]
+            }
+        }
+    },
+    {
+        "comment": "Files with the following endings are Documentation licensed.",
+        "file_pattern_ending": [".qdoc", ".qdocinc" , ".qdocconf", "README", "qt_attribution.json",
+                                 "config_help.txt"],
+        "location":{
+            "": {
+                "comment": "",
+                "file type": "documentation",
+                "spdx": ["LicenseRef-Qt-Commercial OR GFDL-1.3-no-invariants-only"]
+            }
+        }
+    },
+    {
+        "comment": ["All other files",
+                     "The licensing is defined only by the file location in the Qt module repository.",
+                     "NO <file_pattern_ending> key for this case!",
+                     "This needs to be the last entry of the file."],
+        "location": {
+            "": {
+                "comment": "Default",
+                "file type": "module and plugin",
+                "spdx": ["LicenseRef-Qt-Commercial OR LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only"]
+            },
+            "dist/": {
+                "comment": "Default",
+                "file type": "documentation",
+                "spdx": ["LicenseRef-Qt-Commercial OR GFDL-1.3-no-invariants-only"]
+            },
+            "src/": {
+                "comment": "Default",
+                "file type": "module and plugin",
+                "spdx": ["LicenseRef-Qt-Commercial OR LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only"]
+            },
+            "tests/": {
+                "comment": "Default",
+                "file type": "test",
+                "spdx": ["LicenseRef-Qt-Commercial OR GPL-3.0-only"]
+            },
+            "(.*)(examples/|snippets/)": {
+                "comment": "Default",
+                "file type": "examples and snippets",
+                "spdx": ["LicenseRef-Qt-Commercial OR BSD-3-Clause"]
+            }
+        }
+    }
+]
+
+
+SOURCE FILE: qtimageformats-everywhere-src-6.11.2/src/3rdparty/libtiff/COPYRIGHT
+Copyright (c) 1988-1997 Sam Leffler
+Copyright (c) 1991-1997 Silicon Graphics, Inc.
+
+Permission to use, copy, modify, distribute, and sell this software and 
+its documentation for any purpose is hereby granted without fee, provided
+that (i) the above copyright notices and this permission notice appear in
+all copies of the software and related documentation, and (ii) the names of
+Sam Leffler and Silicon Graphics may not be used in any advertising or
+publicity relating to the software without the specific, prior written
+permission of Sam Leffler and Silicon Graphics.
+
+THE SOFTWARE IS PROVIDED "AS-IS" AND WITHOUT WARRANTY OF ANY KIND, 
+EXPRESS, IMPLIED OR OTHERWISE, INCLUDING WITHOUT LIMITATION, ANY 
+WARRANTY OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.  
+
+IN NO EVENT SHALL SAM LEFFLER OR SILICON GRAPHICS BE LIABLE FOR
+ANY SPECIAL, INCIDENTAL, INDIRECT OR CONSEQUENTIAL DAMAGES OF ANY KIND,
+OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS,
+WHETHER OR NOT ADVISED OF THE POSSIBILITY OF DAMAGE, AND ON ANY THEORY OF 
+LIABILITY, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE 
+OF THIS SOFTWARE.
+
+
+SOURCE FILE: qtimageformats-everywhere-src-6.11.2/src/3rdparty/libtiff/qt_attribution.json
+{
+    "Id": "libtiff",
+    "Name": "TIFF Software Distribution (libtiff)",
+    "QDocModule": "qtimageformats",
+    "QtUsage": "Used in the qtiff image plugin if no system libtiff is found.",
+    "SecurityCritical": true,
+
+    "Description": "",
+    "Homepage": "http://www.simplesystems.org/libtiff/",
+    "Version": "4.7.2",
+    "DownloadLocation": "https://download.osgeo.org/libtiff/tiff-4.7.2.tar.gz",
+    "PURL": [
+        "pkg:gitlab/libtiff/libtiff@v$<VERSION>"
+    ],
+    "CPE": [
+        "cpe:2.3:a:libtiff:libtiff:$<VERSION>:*:*:*:*:*:*:*"
+    ],
+
+    "License": "libtiff License",
+    "LicenseId": "libtiff",
+    "LicenseFile": "COPYRIGHT",
+    "Copyright": "Copyright (c) 1988-1997 Sam Leffler\nCopyright (c) 1991-1997 Silicon Graphics, Inc."
+}
+
+
+
+SOURCE FILE: qtimageformats-everywhere-src-6.11.2/src/3rdparty/libwebp/AUTHORS
+Contributors:
+- Aidan O'Loan (aidanol at gmail dot com)
+- Alan Browning (browning at google dot com)
+- Alexandru Ardelean (ardeleanalex at gmail dot com)
+- Anuraag Agrawal (anuraaga at gmail dot com)
+- Arthur Eubanks (aeubanks at google dot com)
+- Brian Ledger (brianpl at google dot com)
+- Charles Munger (clm at google dot com)
+- Cheng Yi (cyi at google dot com)
+- Christian Duvivier (cduvivier at google dot com)
+- Christopher Degawa (ccom at randomderp dot com)
+- Clement Courbet (courbet at google dot com)
+- devtools-clrobot at google dot com (devtools-clrobot@google dot com)
+- Djordje Pesut (djordje dot pesut at imgtec dot com)
+- Frank (1433351828 at qq dot com)
+- Frank Barchard (fbarchard at google dot com)
+- Henner Zeller (hzeller at google dot com)
+- Hui Su (huisu at google dot com)
+- H. Vetinari (h dot vetinari at gmx dot com)
+- Ilya Kurdyukov (jpegqs at gmail dot com)
+- Ingvar Stepanyan (rreverser at google dot com)
+- Istvan Stefan (Istvan dot Stefan at arm dot com)
+- James Zern (jzern at google dot com)
+- Jan Engelhardt (jengelh at medozas dot de)
+- Jehan (jehan at girinstud dot io)
+- Jeremy Maitin-Shepard (jbms at google dot com)
+- Johann Koenig (johann dot koenig at duck dot com)
+- Jonathan Grant (jgrantinfotech at gmail dot com)
+- Jonliu1993 (13720414433 at 163 dot com)
+- Jovan Zelincevic (jovan dot zelincevic at imgtec dot com)
+- Jyrki Alakuijala (jyrki at google dot com)
+- Konstantin Ivlev (tomskside at gmail dot com)
+- Lode Vandevenne (lode at google dot com)
+- Lou Quillio (louquillio at google dot com)
+- Mans Rullgard (mans at mansr dot com)
+- Marcin Kowalczyk (qrczak at google dot com)
+- Martin Olsson (mnemo at minimum dot se)
+- Maryla Ustarroz-Calonge (maryla at google dot com)
+- Masahiro Hanada (hanada at atmark-techno dot com)
+- Mikołaj Zalewski (mikolajz at google dot com)
+- Mislav Bradac (mislavm at google dot com)
+- natewood (natewood at fb dot com)
+- Nico Weber (thakis at chromium dot org)
+- Noel Chromium (noel at chromium dot org)
+- Nozomi Isozaki (nontan at pixiv dot co dot jp)
+- Oliver Wolff (oliver dot wolff at qt dot io)
+- Owen Rodley (orodley at google dot com)
+- Ozkan Sezer (sezeroz at gmail dot com)
+- Parag Salasakar (img dot mips1 at gmail dot com)
+- Pascal Massimino (pascal dot massimino at gmail dot com)
+- Paweł Hajdan, Jr (phajdan dot jr at chromium dot org)
+- Pierre Joye (pierre dot php at gmail dot com)
+- Roberto Alanis (alanisbaez at google dot com)
+- Sam Clegg (sbc at chromium dot org)
+- Scott Hancher (seh at google dot com)
+- Scott LaVarnway (slavarnway at google dot com)
+- Scott Talbot (s at chikachow dot org)
+- Slobodan Prijic (slobodan dot prijic at imgtec dot com)
+- Somnath Banerjee (somnath dot banerjee at gmail dot com)
+- Sriraman Tallam (tmsriram at google dot com)
+- Tamar Levy (tamar dot levy at intel dot com)
+- Thiago Perrotta (tperrotta at google dot com)
+- Timothy Gu (timothygu99 at gmail dot com)
+- Urvang Joshi (urvang at google dot com)
+- Vikas Arora (vikasa at google dot com)
+- Vincent Rabaud (vrabaud at google dot com)
+- Vlad Tsyrklevich (vtsyrklevich at chromium dot org)
+- Wan-Teh Chang (wtc at google dot com)
+- wrv (wrv at utexas dot edu)
+- Yang Zhang (yang dot zhang at arm dot com)
+- Yannis Guyon (yguyon at google dot com)
+- Zhi An Ng (zhin at chromium dot org)
+
+
+SOURCE FILE: qtimageformats-everywhere-src-6.11.2/src/3rdparty/libwebp/COPYING
+Copyright (c) 2010, Google Inc. All rights reserved.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are
+met:
+
+  * Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+
+  * Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in
+    the documentation and/or other materials provided with the
+    distribution.
+
+  * Neither the name of Google nor the names of its contributors may
+    be used to endorse or promote products derived from this software
+    without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+"AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+
+
+SOURCE FILE: qtimageformats-everywhere-src-6.11.2/src/3rdparty/libwebp/qt_attribution.json
+{
+    "Id": "libwebp",
+    "Name": "WebP (libwebp)",
+    "QDocModule": "qtimageformats",
+    "QtUsage": "Used in the qwebp image plugin if no system libwebp is found.",
+    "SecurityCritical": true,
+
+    "Description": "WebP is a new image format that provides lossless and lossy compression for images on the web.",
+    "Homepage": "https://developers.google.com/speed/webp/",
+
+    "Version": "1.6.0",
+    "DownloadLocation": "https://storage.googleapis.com/downloads.webmproject.org/releases/webp/libwebp-1.6.0.tar.gz",
+    "PURL": [
+        "pkg:github/webmproject/libwebp@$v<VERSION>"
+    ],
+    "CPE": [
+        "cpe:2.3:a:webmproject:libwebp:$<VERSION>:*:*:*:*:*:*:*"
+    ],
+    "License": "BSD 3-clause \"New\" or \"Revised\" License",
+    "LicenseId": "BSD-3-Clause",
+    "LicenseFile": "COPYING",
+    "Copyright": "Copyright (c) 2010, Google Inc. All rights reserved."
+}

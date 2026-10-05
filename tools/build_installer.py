@@ -2,7 +2,7 @@
 
 1. PyInstaller --onedir app (folder, no UPX: single-file + keyboard hook trips antivirus heuristics)
 2. zip that folder into build/payload.zip
-3. PyInstaller --onefile setup program with the payload inside
+3. Build a replaceable --onedir Qt setup, inside a stdlib-only extractable envelope
 
 Usage: uv run python tools/build_installer.py        (about 2 minutes; nothing is installed)
 """
@@ -53,35 +53,68 @@ def pyinstaller(*args: str) -> None:
     subprocess.run(cmd, check=True, cwd=ROOT)
 
 
+def prepare_folder(folder: Path) -> None:
+    """Remove unused optional native binaries and retain audit evidence beside each executable."""
+    for candidate in (folder / "_internal" / "_sounddevice_data").rglob("*"):
+        if candidate.is_file() and candidate.suffix in {".dll", ".dylib"} and candidate.name != "libportaudio64bit.dll":
+            candidate.unlink()
+    # This application uses raster Qt Widgets, not OpenGL/Quick widgets. Qt's offscreen
+    # raster probe is checked after packaging; hardware OpenGL remains available.
+    (folder / "_internal" / "PySide6" / "opengl32sw.dll").unlink(missing_ok=True)
+    # Qt uses the Windows Schannel TLS backend. The optional OpenSSL plugin can
+    # otherwise pull DLLs from unrelated software on the build machine's PATH.
+    (folder / "_internal/PySide6/plugins/tls/qopensslbackend.dll").unlink(missing_ok=True)
+    for filename in ("libcrypto-3-x64.dll", "libssl-3-x64.dll"):
+        (folder / "_internal" / filename).unlink(missing_ok=True)
+    # Windows 11 supplies these OS components. Do not redistribute System32 copies.
+    for candidate in (folder / "_internal").glob("api-ms-win-*.dll"):
+        candidate.unlink()
+    (folder / "_internal/ucrtbase.dll").unlink(missing_ok=True)
+    for metadata in (folder / "_internal").glob("*.dist-info"):
+        for filename in ("direct_url.json", "uv_build.json", "uv_cache.json", "RECORD"):
+            (metadata / filename).unlink(missing_ok=True)
+    collect(folder / "licenses", ROOT)
+    shutil.copy2(ROOT / "docs" / "windows-library-replacement.md", folder / "licenses" / "LIBRARY-REPLACEMENT.md")
+
+
+def archive_folder(folder: Path, output: Path) -> None:
+    with zipfile.ZipFile(output, "w", zipfile.ZIP_DEFLATED, compresslevel=6) as archive:
+        for file in sorted(folder.rglob("*")):
+            if file.is_file():
+                archive.write(file, file.relative_to(folder))
+
+
 def main() -> int:
     BUILD.mkdir(exist_ok=True)
     if APP.resolve().parent != DIST.resolve() or APP.is_symlink() or APP.is_junction():
         raise ValueError("Build output must stay inside this checkout's dist directory")
     shutil.rmtree(APP, ignore_errors=True)
     pyinstaller("--onedir", "--name", "sayrift", "--copy-metadata", "sayrift",
+                "--runtime-hook", str(ROOT / "tools" / "windows_runtime_hook.py"),
                 "--version-file", str(version_file("sayrift", "Sayrift voice dictation")),
                 "--distpath", str(DIST), "--workpath", str(BUILD / "app"),
                 str(ROOT / "packaging" / "app_entry.py"))  # fmt: skip
 
-    # Editable-install/cache records contain this developer's checkout and environment paths.
-    for metadata in (APP / "_internal").glob("*.dist-info"):
-        for filename in ("direct_url.json", "uv_build.json", "uv_cache.json", "RECORD"):
-            (metadata / filename).unlink(missing_ok=True)
-
-    collect(APP / "licenses", ROOT)
-
+    prepare_folder(APP)
     payload = BUILD / "payload.zip"
-    with zipfile.ZipFile(payload, "w", zipfile.ZIP_DEFLATED, compresslevel=6) as z:
-        for f in sorted(APP.rglob("*")):
-            if f.is_file():
-                z.write(f, f.relative_to(APP))
+    archive_folder(APP, payload)
 
     setup_name = f"sayrift-Setup-{__version__}"
-    pyinstaller("--onefile", "--name", setup_name,
+    pyinstaller("--onedir", "--name", "SayriftSetup",
+                "--runtime-hook", str(ROOT / "tools" / "windows_runtime_hook.py"),
                 "--version-file", str(version_file(setup_name, "Sayrift Setup")),
                 "--add-data", f"{payload};.", "--distpath", str(DIST), "--workpath", str(BUILD / "setup"),
                 "--exclude-module", "numpy", "--exclude-module", "sounddevice", "--exclude-module", "soundfile",
                 str(ROOT / "packaging" / "setup_main.py"))  # fmt: skip
+    prepare_folder(DIST / "SayriftSetup")
+    archive_folder(DIST / "SayriftSetup", BUILD / "setup.zip")
+    pyinstaller("--onefile", "--name", setup_name,
+                "--version-file", str(version_file(setup_name, "Sayrift Setup")),
+                "--add-data", f"{BUILD / 'setup.zip'};.",
+                "--distpath", str(DIST), "--workpath", str(BUILD / "envelope"),
+                "--exclude-module", "PySide6", "--exclude-module", "shiboken6",
+                "--exclude-module", "numpy", "--exclude-module", "sounddevice", "--exclude-module", "soundfile",
+                str(ROOT / "tools" / "windows_setup_launcher.py"))  # fmt: skip
     setup = DIST / f"{setup_name}.exe"
     print(f"{setup}  ({setup.stat().st_size / 1e6:.0f} MB; app folder {payload.stat().st_size / 1e6:.0f} MB zipped)")
     return 0

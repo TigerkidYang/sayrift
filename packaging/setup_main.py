@@ -10,8 +10,8 @@ import subprocess
 import sys
 from pathlib import Path
 
-from PySide6.QtCore import QObject, Qt, QThread, Signal
-from PySide6.QtGui import QIcon
+from PySide6.QtCore import QObject, Qt, QThread, QUrl, Signal
+from PySide6.QtGui import QDesktopServices, QIcon
 from PySide6.QtWidgets import (
     QApplication,
     QFileDialog,
@@ -178,6 +178,11 @@ class Setup(QWidget):
         self.desktop = Toggle(self.p, True)
         card.body.addWidget(SettingRow(self.t["desktop"], self.desktop))
         col.addWidget(card)
+        notices = QPushButton("Qt / PySide6 / Shiboken (LGPLv3) · Licenses / 许可与库替换")
+        notices.clicked.connect(
+            lambda: QDesktopServices.openUrl(QUrl.fromLocalFile(str(Path(sys.executable).parent / "licenses")))
+        )
+        col.addWidget(notices)
         cancel = QPushButton(self.t["cancel"])
         cancel.clicked.connect(self.close)
         go = QPushButton(self.t["install"])

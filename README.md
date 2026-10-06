@@ -31,7 +31,7 @@ There is no iOS app. macOS and Linux desktop apps are not supported.
 
 Both apps include a Glass interface, local history, a personal dictionary for names and terminology, and usage and cost views. Windows also offers audio retry, model-level cost details, and CSV export. Android keeps text history without audio retry. History and dictionaries are separate on each device; there is no sync.
 
-A layered hotword library is being explored separately and is **not included** in this preview.
+A layered hotword library is being explored separately and is **not included** in this release.
 
 ## Windows quick start
 

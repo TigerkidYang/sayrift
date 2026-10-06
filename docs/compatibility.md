@@ -1,8 +1,8 @@
-# Sayrift 0.2.1 preview: compatibility and upgrades
+# Sayrift 0.2.1: compatibility and upgrades
 
 [English overview](../README.md) · [中文概览](../README.zh-CN.md) · [Build and test instructions](../CONTRIBUTING.md)
 
-Sayrift is the new public name for local-typeless. The 0.2.1 release covers Windows and Android. The first publication is an MIT-licensed source preview. It includes no official EXE/APK downloads; binary distribution requires additional dependency and signing verification.
+Sayrift is the new public name for local-typeless. The 0.2.1 release covers Windows and Android. Version 0.2.1 is a regular GitHub release with official Windows EXE and Android APK downloads. Version 0.2.0 was the earlier source-only prerelease. Download artifacts and corresponding dependency sources from the [0.2.1 release](https://github.com/TigerkidYang/sayrift/releases/tag/v0.2.1); build verification is recorded in [binary release evidence](binary-release.md).
 
 ## Platform coverage
 
@@ -12,7 +12,7 @@ Sayrift is the new public name for local-typeless. The 0.2.1 release covers Wind
 | Android 10–12 | Declared minimum is Android 10 (API 29). Text insertion falls back to accessibility text actions; on failure a result card offers explicit copy. Fields hidden from accessibility may not work. The minimum SDK declaration is not evidence of device validation on every supported version. |
 | Android 13+ | Best integration: an accessibility input connection can insert text alongside the active keyboard, including some fields whose accessibility tree is unavailable. App-specific limits still apply. |
 | Personally tested Android setup | Xiaomi 15, Android 16 / HyperOS 3, Gboard. Recorded checks include WeChat, Xiaohongshu, East Money, ChatGPT, and the app's own fields. This does not establish compatibility with every field, version, keyboard, or phone. |
-| iOS, macOS, Linux desktop | No supported app in this preview. |
+| iOS, macOS, Linux desktop | No supported app in this release. |
 
 The Android interface is currently primarily Chinese; Windows offers Chinese and English with dark, light, and system appearance options. Both platforms use cloud models through OpenRouter and require internet access and the user's own key. There is no offline inference or cross-device history/dictionary sync.
 

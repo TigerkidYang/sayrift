@@ -1,5 +1,7 @@
 # Working on Sayrift
 
+Current release: **v0.2.1**, a regular GitHub release with Windows installer and Android APK downloads. **v0.2.0** was the earlier source-only prerelease. Check the live Releases page before inferring publication status from historical design documents. See docs/release-notes.md and docs/binary-release.md for the released scope and recorded validation.
+
 Read README.md, CONTRIBUTING.md and docs/compatibility.md first.
 
 - Keep the stable branch integration-only. Use a dedicated branch/worktree for independent changes.

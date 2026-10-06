@@ -1,12 +1,12 @@
 # Contributing to Sayrift
 
-Sayrift 0.2.1 is a preview for Windows 11 and Android. Read [AGENTS.md](AGENTS.md) before changing the project, and [compatibility](docs/compatibility.md) before changing names, storage, or installation behavior. Sayrift code is licensed under [MIT](LICENSE); third-party materials retain their own terms.
+Sayrift 0.2.1 is the current downloadable release for Windows 11 and Android; GitHub marks it as a regular release, not a prerelease. Read [AGENTS.md](AGENTS.md) before changing the project, and [compatibility](docs/compatibility.md) before changing names, storage, or installation behavior. Sayrift code is licensed under [MIT](LICENSE); third-party materials retain their own terms.
 
 ## Working on a change
 
 Start by checking the branch, worktrees, and uncommitted changes. Use a dedicated branch and a separate worktree for an independent change; concurrent contributors must not share a working tree. Preserve unrelated changes and keep commits scoped to one task.
 
-Discuss new behavior against the product specification, distinguish experiments from shipped features, and update the relevant documentation. The layered hotword library is a separate experiment and is not part of the 0.2.0 preview.
+Discuss new behavior against the product specification, distinguish experiments from shipped features, and update the relevant documentation. The layered hotword library is a separate experiment and is not part of the 0.2.1 release.
 
 ## Windows development
 

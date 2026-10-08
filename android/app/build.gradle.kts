@@ -52,8 +52,8 @@ android {
         applicationId = "app.localtypeless.android"
         minSdk = 29 // MediaRecorder writes OGG/Opus from Android 10: the same upload format as the desktop app
         targetSdk = 35
-        versionCode = 3
-        versionName = "0.2.1"
+        versionCode = 4
+        versionName = "0.2.2"
     }
 
     signingConfigs {

@@ -1,6 +1,6 @@
 [project]
 name = "sayrift"
-version = "0.2.1"
+version = "0.2.2"
 description = "Sayrift: voice dictation, translation and editing for Windows, powered by OpenRouter"
 readme = "README.md"
 license = "MIT"

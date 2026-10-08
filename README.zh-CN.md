@@ -6,11 +6,11 @@
 
 ![Sayrift Windows 首页，使用演示数据](docs/images/windows-home.png)
 
-**0.2.1** · 原名 local-typeless。可直接下载安装，也可以用自己的 OpenRouter key 从源码构建。
+**0.2.2** · 原名 local-typeless。可直接下载安装，也可以用自己的 OpenRouter key 从源码构建。
 
-- [Windows 11 安装包](https://github.com/TigerkidYang/sayrift/releases/download/v0.2.1/sayrift-Setup-0.2.1.exe)
-- [Android APK](https://github.com/TigerkidYang/sayrift/releases/download/v0.2.1/sayrift-0.2.1-android.apk)
-- [发布说明、校验值与依赖源码](https://github.com/TigerkidYang/sayrift/releases/tag/v0.2.1)
+- [Windows 11 安装包](https://github.com/TigerkidYang/sayrift/releases/download/v0.2.2/sayrift-Setup-0.2.2.exe)
+- [Android APK](https://github.com/TigerkidYang/sayrift/releases/download/v0.2.2/sayrift-0.2.2-android.apk)
+- [发布说明、校验值与依赖源码](https://github.com/TigerkidYang/sayrift/releases/tag/v0.2.2)
 
 Windows 安装包目前没有代码签名。Android APK 使用 Sayrift 发布证书，不能直接覆盖旧的个人 debug 签名版本；不要为解决签名不匹配而卸载旧应用，详见[升级兼容说明](docs/compatibility.md)。
 
@@ -31,7 +31,13 @@ Windows 安装包目前没有代码签名。Android APK 使用 Sayrift 发布证
 
 两端都有 Glass 界面、本地历史、人名和术语词典，以及用量和花费查看。Windows 还支持用历史录音重试、按模型查看花费和导出 CSV；Android 仅保存文字历史，不支持录音重试。两端的历史和词典独立保存，不做同步。
 
-分级热词库仍是独立实验，**未集成进 0.2.1 发布版**。
+分级热词库仍是独立实验，**未集成进 0.2.2 发布版**。
+
+### 0.2.2 更新
+
+听写更清楚地整理长段解释、条件分支和多层选项，同时保留未定意见、改口以及“先别改代码”等限制。
+Windows 和 Android 共用的 prompt 已与官方 Typeless 实际输出对照，并通过两种文本模型的 43 条合成用例回归。
+具体结果和已知限制见[发布说明](docs/release-notes.md)。
 
 ## Windows 开始使用
 
@@ -50,7 +56,7 @@ uv run sayrift
 uv run python tools/build_installer.py
 ```
 
-产物为 `dist\sayrift-Setup-0.2.1.exe`，按当前用户安装，不需要管理员权限。
+产物为 `dist\sayrift-Setup-0.2.2.exe`，按当前用户安装，不需要管理员权限。
 
 1. 在 Windows **用户环境变量**中添加 `OPENROUTER_API_KEY`，值为自己的 OpenRouter key，不要写进配置文件。
 2. 打开 Sayrift，按首次引导检查 key、麦克风和快捷键。添加环境变量后，可以在引导中重新检测。

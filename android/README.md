@@ -1,5 +1,8 @@
 # Sayrift Android
 
+当前版本 **0.2.2**（`versionCode = 4`），更新听写整理效果，与 Windows 共用最新 prompt。
+沿用 0.2.1 公开发布证书，可覆盖安装公开版 0.2.1 并保留数据；下载见 [v0.2.2](https://github.com/TigerkidYang/sayrift/releases/tag/v0.2.2)。
+
 `0.2.1`（`versionCode = 3`）将原来的 local-typeless 更名为 Sayrift，沿用 Glass 光球图标。
 改名覆盖启动器、系统应用与无障碍服务标签、引导和故障提示、录音通知、Gradle 项目名及 OpenRouter 的 `X-Title`。
 

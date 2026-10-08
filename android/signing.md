@@ -119,6 +119,8 @@ Windows 对应 `apksigner.bat`。AAB 用 JDK 的 `jarsigner -verify -verbose -ce
 
 ## Sayrift 0.2.1 公开签名
 
+0.2.2 沿用此签名身份，`versionCode` 从 3 增至 4；本轮制品核验见 [0.2.2 发布记录](../docs/release-0.2.2.md)。
+
 公开 APK 使用独立的 RSA 4096 发布证书（`CN=Sayrift, OU=Release, O=Sayrift`），与早期个人 debug 签名不同。证书 SHA-256：
 
 ```text

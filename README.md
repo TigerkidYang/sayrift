@@ -6,11 +6,11 @@ English · [简体中文](README.zh-CN.md)
 
 ![Sayrift Windows home screen with demo data](docs/images/windows-home.png)
 
-**0.2.1** · Formerly local-typeless. Download an installer below, or build from source with your own OpenRouter key.
+**0.2.2** · Formerly local-typeless. Download an installer below, or build from source with your own OpenRouter key.
 
-- [Windows 11 installer](https://github.com/TigerkidYang/sayrift/releases/download/v0.2.1/sayrift-Setup-0.2.1.exe)
-- [Android APK](https://github.com/TigerkidYang/sayrift/releases/download/v0.2.1/sayrift-0.2.1-android.apk)
-- [Release notes, checksums and dependency sources](https://github.com/TigerkidYang/sayrift/releases/tag/v0.2.1)
+- [Windows 11 installer](https://github.com/TigerkidYang/sayrift/releases/download/v0.2.2/sayrift-Setup-0.2.2.exe)
+- [Android APK](https://github.com/TigerkidYang/sayrift/releases/download/v0.2.2/sayrift-0.2.2-android.apk)
+- [Release notes, checksums and dependency sources](https://github.com/TigerkidYang/sayrift/releases/tag/v0.2.2)
 
 Windows builds are currently unsigned. The Android APK is signed with the Sayrift release certificate; it cannot directly replace earlier personal debug-signed installations. Do not uninstall an existing installation just to bypass a signature mismatch; see [upgrade compatibility](docs/compatibility.md).
 
@@ -33,6 +33,13 @@ Both apps include a Glass interface, local history, a personal dictionary for na
 
 A layered hotword library is being explored separately and is **not included** in this release.
 
+### New in 0.2.2
+
+Dictation now handles long explanations, conditional branches and nested choices more clearly,
+while preserving tentative wording, corrections and instructions such as “don't change the code yet.”
+The shared Windows/Android prompt was compared with official Typeless outputs and tested on 43
+synthetic cases using both text models. See the [release notes](docs/release-notes.md) for results and limits.
+
 ## Windows quick start
 
 Download and run the installer, then follow the first-run guide. No Python or terminal is needed for the installed app.
@@ -50,7 +57,7 @@ uv run sayrift
 uv run python tools/build_installer.py
 ```
 
-This produces `dist\sayrift-Setup-0.2.1.exe`. Installation is per user and does not require administrator rights.
+This produces `dist\sayrift-Setup-0.2.2.exe`. Installation is per user and does not require administrator rights.
 
 1. Add your OpenRouter key as the **user environment variable** `OPENROUTER_API_KEY`. Do not put it in a configuration file.
 2. Open Sayrift and follow the first-run guide to check the key, microphone, and shortcuts. The guide can re-read the user environment after you add the key.

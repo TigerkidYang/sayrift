@@ -121,16 +121,18 @@ prompt 增加了“笔记类应用把并列项转成列表”的规则和示例�
 
 对比 Typeless Pro 的 $12/月。
 
-## 6. 默认配置与备选
+## 6. 默认配置与备选（2026-10-08 按源码核对）
 
 | 用途 | 默认 | 备用（主模型报错时） | 请求参数 |
 |---|---|---|---|
 | ASR | `openai/gpt-transcribe` | `microsoft/mai-transcribe-2` | `provider.options.openai.{keywords, languages}`；`data_collection=deny` |
-| 听写润色 | `deepseek/deepseek-v4.1-flash` | `qwen/qwen3.8-flash` | `reasoning.enabled=false`，`provider.sort=latency` |
-| 语音指令 / 提问（M3） | 待评测（候选：deepseek-v4.1-flash、gpt-5.6-luna、kimi-k2.6） | | |
-| 翻译（M4） | 待评测（候选：deepseek-v4.1-flash、tencent/hy-mt2-30b-a3b 翻译专用模型） | | |
+| 听写润色 | `deepseek/deepseek-v4.1-flash` | `openai/gpt-6-luna` | `reasoning.enabled=false`，`provider.sort=latency` |
+| 语音指令 / 提问 | `deepseek/deepseek-v4.1-flash` | `openai/gpt-6-luna` | 独立 Ask 提示词与结构化动作输出 |
+| 翻译 | `deepseek/deepseek-v4.1-flash` | `openai/gpt-6-luna` | 复用润色模型配置，使用翻译提示词 |
 
 请求预设在 `src/local_typeless/models.py` 的 `CHAT_PRESETS` 里。换模型之前先跑一遍 `tools/bench_polish.py`。
+
+2026-10-08 未换模型，仅调整听写提示词。33 条用例各 3 次，主模型 92/99 → 99/99，备用 89/99 → 97/99；原有用例无新增失败。历史样本范围、计分规则复核、费用与限制见 [本次评测记录](prompt-quality-2026-10-08.md)。已有用户配置若显式填写旧备用模型，会继续覆盖这些默认值。
 
 ## 7. 待办 / 未决
 
@@ -164,4 +166,3 @@ prompt 增加了“笔记类应用把并列项转成列表”的规则和示例�
 - Ask 唯一的失败是弯引号（`didn’t`），内容正确。
 - **不适合当默认模型**：比 DeepSeek 贵约 2–3 倍，整理质量也低一档。**作为备用可以**：只在默认模型出错或超时时才用，而且比 qwen 便宜。
 - 注意：之前说"Luna 成本减半"指的是**生成仓库词库**（实验 24），不是日常整理。
-

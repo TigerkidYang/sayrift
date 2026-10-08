@@ -66,7 +66,7 @@ def run_case(client: OpenRouterClient, model: str, case: dict) -> Run:
     ctx = prompts.Context(**case.get("context", {}))
     messages = prompts.dictation_messages(case["transcript"], ctx)
     try:
-        res = client.chat(messages, model, max_tokens=800, extra=chat_extra(model))
+        res = client.chat(messages, model, max_tokens=max(256, 4 * len(case["transcript"])), extra=chat_extra(model))
     except OpenRouterError as e:
         return Run(model, case["id"], False, error=str(e)[:300])
     fails = check(case, res.text)

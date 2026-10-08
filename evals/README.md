@@ -50,3 +50,10 @@ uv run python tools/bench_ask.py --repeat 3
 These commands cost money. Add a reproducing case before changing prompts, then compare the primary
 and fallback models. Avoid overfitting checks to a single valid phrasing. Keep concurrency at six
 or below. Model availability, cost and latency can change; historical tables are not current guarantees.
+
+`polish/typeless-2026-10-08.json` preserves eight synthetic inputs with observed official Typeless
+outputs and Sayrift comparisons. It is an observation record, not an exact-match gold standard:
+official recognition mistakes and missing constraints must not become desired behavior. See
+[the history-scenario report](../docs/typeless-history-comparison-2026-10-08.md) for provenance,
+audio-versus-text comparison boundaries, regression results and remaining gaps. Personal history
+and generated audio stay outside the repository.

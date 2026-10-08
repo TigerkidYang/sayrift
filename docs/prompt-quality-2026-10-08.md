@@ -49,3 +49,5 @@ uv run ruff format --check .
 Android `:core:test` 验证共享提示词的构建加载和流水线。Windows 上如 Gradle 报 `Unable to establish loopback connection`，可为本次命令设置较短的 TEMP / TMP 路径后重试，不需要改产品代码。
 
 本次为源码改动，已发布的 v0.2.1 EXE / APK 不会自动获得新提示词；需要从更新后的源码运行，或重新构建安装包 / APK 后才生效。
+
+同日后续进行了[官方 Typeless v2.8.1 本机对照](typeless-comparison-2026-10-08.md)，新增动作语义回归并继续收紧提示词；上面的 33 条结果是本轮历史记录，后续 34 条结果见该报告。
